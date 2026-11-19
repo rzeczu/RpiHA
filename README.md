@@ -1,5 +1,7 @@
 # RpiHA
 
+**English** | [Polski](README.pl.md)
+
 **Raspberry Pi HERO ARCADE**: a Raspberry Pi Pico replacement for the controller in the guitar of
 the Raw Thrills *Guitar Hero Arcade* cabinet (2009).
 
@@ -293,7 +295,7 @@ The Pico's LED, if you can see it:
 ### The big picture
 
 ```
- cabinet PC              guitar neck PCB (U1 removed)               Raspberry Pi Pico
+ cabinet PC              guitar neck PCB (U1 removed)              Raspberry Pi Pico
 ┌───────────┐  cable   ┌──────────────────────────────────────┐
 │           │ +5 V, GND│ points 1, 2 ─────────────────────────┼──► VBUS, GND
 │   game    │ D+, D−   │ P1 ── resistors ── points 5, 6 ──────┼──► TP3, TP2
@@ -564,7 +566,7 @@ need them to build or install RpiHA. They expect Python 3.13 on Windows
 | `calib_accel.py` | Tilt calibration: `original`, `pico`, `fit`, plus `live` and `view` to watch the readings. |
 | `read_pico_log.py` | Downloads and decodes the flash log from a Pico in log dump mode. Can also read a flash image (`--file`) or use `picotool`. |
 | `firmware/bin/rtgh_proxy_rp2040.uf2` | Recorder that sits between the cabinet and an **original** guitar and passes everything through in both directions while logging it. The guitar connects to a USB-A socket wired to GP16 (D+), GP17 (D−), VBUS and GND. This is how the mating protocol was found. |
-| `docs/make_pcb_render.py` | Regenerates `docs/pcb_render.svg` from the measured part positions. |
+| `docs/make_pcb_render.py` | Regenerates both drawings (`pcb_render.svg` in English, `pcb_render.pl.svg` in Polish) from the measured part positions. The captions of both versions are in the `TEXTS` dictionary in the script. |
 
 ---
 
@@ -587,8 +589,9 @@ firmware/
   CMakeLists.txt
   build.ps1                Windows build script
 docs/
-  pcb_render.svg / .png    wiring map
-  make_pcb_render.py       generator for the wiring map
+  pcb_render.svg / .png    wiring map, English
+  pcb_render.pl.svg / .png wiring map, Polish
+  make_pcb_render.py       generator for both versions of the wiring map
   dev-notes-pl.md          original development notes (Polish)
 SKAN PCB/                  scans of the board: marked photos and the original PDF
 profile.json               everything recorded from the original guitar
