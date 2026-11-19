@@ -1,0 +1,10 @@
+# build output
+build/
+
+# Python cache
+__pycache__/
+
+# local recordings and logs (raw USB captures can contain traffic from other devices)
+*.pcap
+pico_log_*.txt
+verify_report.json

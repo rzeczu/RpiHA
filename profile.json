@@ -1,0 +1,1038 @@
+{
+ "format": 1,
+ "created": "2026-11-11T20:07:49",
+ "tool": "capture.py",
+ "product_match": "RT-GH INPUT",
+ "hidapi": {
+  "vendor_id": 3184,
+  "product_id": 1911,
+  "manufacturer": "RAW THRILLS,INC.",
+  "product": "RT-GH INPUT ",
+  "serial": "",
+  "release_number": 0,
+  "usage_page": 1,
+  "usage": 4,
+  "interface_number": 0,
+  "path": "\\\\?\\HID#VID_0C70&PID_0777&MI_00#7&1096c400&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}"
+ },
+ "usb": {
+  "usb_address": {
+   "bus": 1,
+   "address": 13
+  },
+  "summary": {
+   "bcdUSB": 257,
+   "bcdDevice": 0,
+   "bMaxPacketSize0": 8,
+   "idVendor": 3184,
+   "idProduct": 1911,
+   "bDeviceClass": 0,
+   "bNumConfigurations": 1
+  },
+  "descriptors": {
+   "device": "1201010100000008700c7707000001020001",
+   "configuration": {
+    "0": "090243000201048000030900090400000103000305092100010001225300070581030800200904010003ff01ff06070582034000010705030340000107058403400001"
+   },
+   "hid_report": {
+    "0": "050115000904a101050209bb1581257f75089500810205010901a1000930093109320933093495058102c00939150025033500460e01651475049501810205091901290a150025017501950c550065008102c0"
+   },
+   "hid_class_descriptor": {},
+   "langids": [
+    1033
+   ],
+   "strings": [
+    {
+     "index": 0,
+     "langid": 0,
+     "hex": "04030904",
+     "text": null,
+     "source": "pcap (HidD_GetIndexedString)"
+    },
+    {
+     "index": 1,
+     "langid": 1033,
+     "hex": "2203520041005700200054004800520049004c004c0053002c0049004e0043002e00",
+     "text": "RAW THRILLS,INC.",
+     "source": "pcap"
+    },
+    {
+     "index": 2,
+     "langid": 1033,
+     "hex": "220352005400200047004800200043004f004e00540052004f004c004c0045005200",
+     "text": "RT GH CONTROLLER",
+     "source": "pcap (HidD_GetIndexedString)"
+    },
+    {
+     "index": 3,
+     "langid": 1033,
+     "hex": "0a03560030002e003100",
+     "text": "V0.1",
+     "source": "pcap (HidD_GetIndexedString)"
+    },
+    {
+     "index": 4,
+     "langid": 1033,
+     "hex": "2c03440065006600610075006c007400200063006f006e00660069006700750072006100740069006f006e00",
+     "text": "Default configuration",
+     "source": "pcap (HidD_GetIndexedString)"
+    },
+    {
+     "index": 5,
+     "langid": 1033,
+     "hex": "1a03520054002d0047004800200049004e005000550054002000",
+     "text": "RT-GH INPUT ",
+     "source": "pcap"
+    },
+    {
+     "index": 6,
+     "langid": 1033,
+     "hex": "1a03520054002d004700480020004c0045004400200020002000",
+     "text": "RT-GH LED   ",
+     "source": "pcap"
+    }
+   ],
+   "bos": null,
+   "device_qualifier": null,
+   "other": {}
+  },
+  "string_probe": {
+   "0": "OK",
+   "1": "OK",
+   "2": "OK",
+   "3": "OK",
+   "4": "OK",
+   "5": "OK",
+   "6": "OK"
+  },
+  "interfaces": [
+   {
+    "number": 0,
+    "alt": 0,
+    "class": 3,
+    "subclass": 0,
+    "protocol": 3,
+    "iInterface": 5,
+    "endpoints": [
+     {
+      "address": 129,
+      "attributes": 3,
+      "wMaxPacketSize": 8,
+      "bInterval": 32
+     }
+    ],
+    "hid": {
+     "bLength": 9,
+     "bDescriptorType": 33,
+     "bcdHID": 256,
+     "bCountryCode": 0,
+     "bNumDescriptors": 1,
+     "bClassDescriptorType": 34,
+     "wDescriptorLength": 83
+    }
+   },
+   {
+    "number": 1,
+    "alt": 0,
+    "class": 255,
+    "subclass": 1,
+    "protocol": 255,
+    "iInterface": 6,
+    "endpoints": [
+     {
+      "address": 130,
+      "attributes": 3,
+      "wMaxPacketSize": 64,
+      "bInterval": 1
+     },
+     {
+      "address": 3,
+      "attributes": 3,
+      "wMaxPacketSize": 64,
+      "bInterval": 1
+     },
+     {
+      "address": 132,
+      "attributes": 3,
+      "wMaxPacketSize": 64,
+      "bInterval": 1
+     }
+    ],
+    "hid": null
+   }
+  ],
+  "class_vendor_in": [],
+  "failed_get_descriptor": [],
+  "control_log": [
+   {
+    "t": 0.0,
+    "setup": "8006000100001200",
+    "out": "",
+    "response": "1201010100000008700c7707000001020001",
+    "status": "OK"
+   },
+   {
+    "t": 0.000663,
+    "setup": "8006000200000900",
+    "out": "",
+    "response": "090243000201048000",
+    "status": "OK"
+   },
+   {
+    "t": 0.001082,
+    "setup": "8006000200004300",
+    "out": "",
+    "response": "090243000201048000030900090400000103000305092100010001225300070581030800200904010003ff01ff06070582034000010705030340000107058403400001",
+    "status": "OK"
+   },
+   {
+    "t": 0.004856,
+    "setup": "0009010000000000",
+    "out": "",
+    "response": "",
+    "status": "OK"
+   },
+   {
+    "t": 0.01369,
+    "setup": "8006050309040400",
+    "out": "",
+    "response": "1a035200",
+    "status": "OK"
+   },
+   {
+    "t": 0.013973,
+    "setup": "8006050309041a00",
+    "out": "",
+    "response": "1a03520054002d0047004800200049004e005000550054002000",
+    "status": "OK"
+   },
+   {
+    "t": 0.016196,
+    "setup": "8006060309040400",
+    "out": "",
+    "response": "1a035200",
+    "status": "OK"
+   },
+   {
+    "t": 0.016484,
+    "setup": "8006060309041a00",
+    "out": "",
+    "response": "1a03520054002d004700480020004c0045004400200020002000",
+    "status": "OK"
+   },
+   {
+    "t": 0.018445,
+    "setup": "210a000000000000",
+    "out": "",
+    "response": "",
+    "status": "OK"
+   },
+   {
+    "t": 0.018687,
+    "setup": "8106002200009300",
+    "out": "",
+    "response": "050115000904a101050209bb1581257f75089500810205010901a1000930093109320933093495058102c00939150025033500460e01651475049501810205091901290a150025017501950c550065008102c0",
+    "status": "OK"
+   },
+   {
+    "t": 0.041943,
+    "setup": "800601030904fe00",
+    "out": "",
+    "response": "2203520041005700200054004800520049004c004c0053002c0049004e0043002e00",
+    "status": "OK"
+   },
+   {
+    "t": 0.069401,
+    "setup": "800605030904fe00",
+    "out": "",
+    "response": "1a03520054002d0047004800200049004e005000550054002000",
+    "status": "OK"
+   },
+   {
+    "t": 0.539082,
+    "setup": "800601030904fe00",
+    "out": "",
+    "response": "2203520041005700200054004800520049004c004c0053002c0049004e0043002e00",
+    "status": "OK"
+   },
+   {
+    "t": 0.540129,
+    "setup": "800605030904fe00",
+    "out": "",
+    "response": "1a03520054002d0047004800200049004e005000550054002000",
+    "status": "OK"
+   },
+   {
+    "t": 1.038687,
+    "setup": "800601030904fe00",
+    "out": "",
+    "response": "2203520041005700200054004800520049004c004c0053002c0049004e0043002e00",
+    "status": "OK"
+   },
+   {
+    "t": 1.039813,
+    "setup": "800605030904fe00",
+    "out": "",
+    "response": "1a03520054002d0047004800200049004e005000550054002000",
+    "status": "OK"
+   }
+  ],
+  "missing": []
+ },
+ "report_descriptor_source": "pcap (interfejs 0)",
+ "report_descriptor_hidapi": {
+  "available": true,
+  "hex": "05010904a1010901a100093009310932093309341581257f750895058102c00939150025033500460e01651475049501810205091901290a150025017501950c450065008102c0",
+  "match": "semantic"
+ },
+ "report_map": {
+  "uses_report_ids": false,
+  "lengths": [
+   {
+    "type": "Input",
+    "report_id": null,
+    "bits": 56,
+    "wire_bytes": 7
+   }
+  ],
+  "elements": [
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": -127,
+    "lmax": 127,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)/Physical(Pointer)",
+    "bit": 0,
+    "size": 8,
+    "kind": "var",
+    "usage": "X",
+    "usage_page": 1,
+    "usage_id": 48,
+    "byte": 0,
+    "bit_in_byte": 0
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": -127,
+    "lmax": 127,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)/Physical(Pointer)",
+    "bit": 8,
+    "size": 8,
+    "kind": "var",
+    "usage": "Y",
+    "usage_page": 1,
+    "usage_id": 49,
+    "byte": 1,
+    "bit_in_byte": 0
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": -127,
+    "lmax": 127,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)/Physical(Pointer)",
+    "bit": 16,
+    "size": 8,
+    "kind": "var",
+    "usage": "Z",
+    "usage_page": 1,
+    "usage_id": 50,
+    "byte": 2,
+    "bit_in_byte": 0
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": -127,
+    "lmax": 127,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)/Physical(Pointer)",
+    "bit": 24,
+    "size": 8,
+    "kind": "var",
+    "usage": "Rx",
+    "usage_page": 1,
+    "usage_id": 51,
+    "byte": 3,
+    "bit_in_byte": 0
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": -127,
+    "lmax": 127,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)/Physical(Pointer)",
+    "bit": 32,
+    "size": 8,
+    "kind": "var",
+    "usage": "Ry",
+    "usage_page": 1,
+    "usage_id": 52,
+    "byte": 4,
+    "bit_in_byte": 0
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 3,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 40,
+    "size": 4,
+    "kind": "var",
+    "usage": "Hat switch",
+    "usage_page": 1,
+    "usage_id": 57,
+    "byte": 5,
+    "bit_in_byte": 0
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 44,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 1",
+    "usage_page": 9,
+    "usage_id": 1,
+    "byte": 5,
+    "bit_in_byte": 4
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 45,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 2",
+    "usage_page": 9,
+    "usage_id": 2,
+    "byte": 5,
+    "bit_in_byte": 5
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 46,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 3",
+    "usage_page": 9,
+    "usage_id": 3,
+    "byte": 5,
+    "bit_in_byte": 6
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 47,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 4",
+    "usage_page": 9,
+    "usage_id": 4,
+    "byte": 5,
+    "bit_in_byte": 7
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 48,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 5",
+    "usage_page": 9,
+    "usage_id": 5,
+    "byte": 6,
+    "bit_in_byte": 0
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 49,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 6",
+    "usage_page": 9,
+    "usage_id": 6,
+    "byte": 6,
+    "bit_in_byte": 1
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 50,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 7",
+    "usage_page": 9,
+    "usage_id": 7,
+    "byte": 6,
+    "bit_in_byte": 2
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 51,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 8",
+    "usage_page": 9,
+    "usage_id": 8,
+    "byte": 6,
+    "bit_in_byte": 3
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 52,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 9",
+    "usage_page": 9,
+    "usage_id": 9,
+    "byte": 6,
+    "bit_in_byte": 4
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 53,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 10",
+    "usage_page": 9,
+    "usage_id": 10,
+    "byte": 6,
+    "bit_in_byte": 5
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 54,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 10",
+    "usage_page": 9,
+    "usage_id": 10,
+    "byte": 6,
+    "bit_in_byte": 6
+   },
+   {
+    "type": "Input",
+    "report_id": null,
+    "lmin": 0,
+    "lmax": 1,
+    "flags": "Data,Var,Abs",
+    "collection": "Application(Joystick)",
+    "bit": 55,
+    "size": 1,
+    "kind": "var",
+    "usage": "Button 10",
+    "usage_page": 9,
+    "usage_id": 10,
+    "byte": 6,
+    "bit_in_byte": 7
+   }
+  ],
+  "warnings": []
+ },
+ "reports_probe": {
+  "feature": {},
+  "input": {
+   "none": {
+    "hex": "0020f481fff40f14",
+    "len": 8
+   }
+  },
+  "note": "odpowiedź hidapi: pierwszy bajt = report ID (0 gdy brak ID)"
+ },
+ "baseline": {
+  "none": {
+   "neutral_hex": "20f781fff70f14",
+   "samples": 156,
+   "noisy_bits": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "ignored_bits": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ]
+   ],
+   "noisy_byte_ranges": {
+    "1": [
+     244,
+     250
+    ],
+    "4": [
+     244,
+     250
+    ]
+   },
+   "noisy_fields": [
+    {
+     "usage": "Y",
+     "byte": 1,
+     "bit": 0,
+     "size": 8,
+     "min": -12,
+     "max": -6,
+     "median": -9
+    },
+    {
+     "usage": "Ry",
+     "byte": 4,
+     "bit": 0,
+     "size": 8,
+     "min": -12,
+     "max": -6,
+     "median": -9
+    }
+   ]
+  }
+ },
+ "neutral_report": {
+  "report_id": null,
+  "hex": "20f781fff70f14"
+ },
+ "timing": {
+  "pcap": "timing.pcap",
+  "device_key": [
+   1,
+   13
+  ],
+  "endpoint": "0x81",
+  "count": 209,
+  "duration_s": 6.694,
+  "period_ms_median": 31.999,
+  "period_ms_p10": 31.865,
+  "period_ms_p90": 32.146,
+  "period_ms_min": 31.746,
+  "period_ms_max": 32.272,
+  "identical_consecutive_fraction": 0.231,
+  "identical_consecutive_fraction_ignoring_noise": 1.0,
+  "report_length": 7,
+  "mode": "cyclic",
+  "note": "raporty idą cyklicznie; różnią się tylko bitami szumiącymi - nie wiadomo, czy bez szumu też by szły (przy stałym okresie ~bInterval to prawie pewne)",
+  "bInterval": 32
+ },
+ "inputs": {
+  "GREEN": {
+   "bits": [
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 4,
+     "neutral": 0
+    }
+   ],
+   "fields": [
+    {
+     "report_id": null,
+     "usage": "Button 1",
+     "kind": "var",
+     "byte": 5,
+     "bit": 4,
+     "size": 1,
+     "neutral": 0,
+     "held": 1
+    }
+   ],
+   "held_report_hex": {
+    "none": "20f481fff71f14"
+   },
+   "warnings": [],
+   "info": []
+  },
+  "RED": {
+   "bits": [
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 5,
+     "neutral": 0
+    }
+   ],
+   "fields": [
+    {
+     "report_id": null,
+     "usage": "Button 2",
+     "kind": "var",
+     "byte": 5,
+     "bit": 5,
+     "size": 1,
+     "neutral": 0,
+     "held": 1
+    }
+   ],
+   "held_report_hex": {
+    "none": "20f481fff72f14"
+   },
+   "warnings": [],
+   "info": []
+  },
+  "YELLOW": {
+   "bits": [
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 7,
+     "neutral": 0
+    }
+   ],
+   "fields": [
+    {
+     "report_id": null,
+     "usage": "Button 4",
+     "kind": "var",
+     "byte": 5,
+     "bit": 7,
+     "size": 1,
+     "neutral": 0,
+     "held": 1
+    }
+   ],
+   "held_report_hex": {
+    "none": "20f181fff48f14"
+   },
+   "warnings": [],
+   "info": []
+  },
+  "BLUE": {
+   "bits": [
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 6,
+     "neutral": 0
+    }
+   ],
+   "fields": [
+    {
+     "report_id": null,
+     "usage": "Button 3",
+     "kind": "var",
+     "byte": 5,
+     "bit": 6,
+     "size": 1,
+     "neutral": 0,
+     "held": 1
+    }
+   ],
+   "held_report_hex": {
+    "none": "20f181fff74f14"
+   },
+   "warnings": [],
+   "info": []
+  },
+  "ORANGE": {
+   "bits": [
+    {
+     "report_id": null,
+     "byte": 6,
+     "bit": 0,
+     "neutral": 0
+    }
+   ],
+   "fields": [
+    {
+     "report_id": null,
+     "usage": "Button 5",
+     "kind": "var",
+     "byte": 6,
+     "bit": 0,
+     "size": 1,
+     "neutral": 0,
+     "held": 1
+    }
+   ],
+   "held_report_hex": {
+    "none": "20f181fff70f15"
+   },
+   "warnings": [],
+   "info": []
+  },
+  "STRUM UP": {
+   "bits": [
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 0,
+     "neutral": 1
+    },
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 1,
+     "neutral": 1
+    },
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 2,
+     "neutral": 1
+    },
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 3,
+     "neutral": 1
+    }
+   ],
+   "fields": [
+    {
+     "report_id": null,
+     "usage": "Hat switch",
+     "kind": "var",
+     "byte": 5,
+     "bit": 0,
+     "size": 4,
+     "neutral": 15,
+     "held": 0
+    }
+   ],
+   "held_report_hex": {
+    "none": "20ee81fff40014"
+   },
+   "warnings": [],
+   "info": []
+  },
+  "STRUM DOWN": {
+   "bits": [
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 0,
+     "neutral": 1
+    },
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 2,
+     "neutral": 1
+    },
+    {
+     "report_id": null,
+     "byte": 5,
+     "bit": 3,
+     "neutral": 1
+    }
+   ],
+   "fields": [
+    {
+     "report_id": null,
+     "usage": "Hat switch",
+     "kind": "var",
+     "byte": 5,
+     "bit": 0,
+     "size": 4,
+     "neutral": 15,
+     "held": 2
+    }
+   ],
+   "held_report_hex": {
+    "none": "20fa81fff70214"
+   },
+   "warnings": [],
+   "info": []
+  }
+ },
+ "files": {
+  "enum_pcap": "enum.pcap",
+  "timing_pcap": "timing.pcap"
+ },
+ "accel": {
+  "created": "2026-11-16T21:03:21",
+  "adc_gpio": [
+   26,
+   27,
+   28
+  ],
+  "fits": [
+   {
+    "byte": 1,
+    "usage": "Y",
+    "coef": [
+     219.20892665772712,
+     0.0,
+     0.0,
+     -0.11455213230581993
+    ],
+    "rms": 4.551494760814879,
+    "points": 7,
+    "axis": "X/GP28",
+    "dropped": null
+   },
+   {
+    "byte": 2,
+    "usage": "Z",
+    "coef": [
+     284.72171140605917,
+     -0.14427624962701865,
+     0.0,
+     0.0
+    ],
+    "rms": 9.399472088559348,
+    "points": 7,
+    "axis": "Z/GP26",
+    "dropped": null
+   },
+   {
+    "byte": 4,
+    "usage": "Ry",
+    "coef": [
+     291.15425939247694,
+     0.0,
+     -0.14731655953403114,
+     0.0
+    ],
+    "rms": 1.8646263711415623,
+    "points": 6,
+    "axis": "Y/GP27",
+    "dropped": "Pozycja do gry (jak na pasku), gryf poziomo w lewo"
+   }
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "created": "2026-11-16T21:00:06",
+ "poses": [
+  "Le\u017cy p\u0142asko na plecach (przyciski/struny do g\u00f3ry), gryf w lewo",
+  "Le\u017cy p\u0142asko przodem w d\u00f3\u0142, gryf w lewo",
+  "Pozycja do gry (jak na pasku), gryf poziomo w lewo",
+  "Pozycja do gry, gryf uniesiony do g\u00f3ry ok. 45\u00b0 (jak przy Star Power)",
+  "Pozycja do gry, gryf opuszczony w d\u00f3\u0142 ok. 45\u00b0",
+  "Stoi pionowo na korpusie, gryf prosto do g\u00f3ry",
+  "Wisi pionowo, gryf prosto w d\u00f3\u0142",
+  "Le\u017cy na boku: g\u00f3rna kraw\u0119d\u017a korpusu na stole, przyciski w twoj\u0105 stron\u0119"
+ ],
+ "values": [
+  [
+   3092,
+   2072,
+   1952
+  ],
+  [
+   1136.0,
+   2056.0,
+   1964.0
+  ],
+  [
+   2148.0,
+   2132.0,
+   2930.0
+  ],
+  [
+   2136,
+   1280,
+   2544
+  ],
+  [
+   2124,
+   2760,
+   2632
+  ],
+  [
+   2088.0,
+   1060.0,
+   1926.0
+  ],
+  [
+   2064,
+   3048,
+   1944
+  ],
+  [
+   2132,
+   2128,
+   880
+  ]
+ ]
+}
