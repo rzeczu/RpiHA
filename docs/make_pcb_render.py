@@ -10,10 +10,15 @@ y runs along it toward the fret switches. Parts are drawn as simple shapes; thei
 sizes follow the scans.
 
     py -3 docs/make_pcb_render.py
+
+Writes two versions with the same drawing: docs/pcb_render.svg (English) and
+docs/pcb_render.pl.svg (Polish). All captions live in TEXTS below; the silkscreen on the board
+itself (designators, RAW THRILLS, SW_ORANGE ...) is drawn as printed and is not translated.
 """
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent / "pcb_render.svg"
+OUT_DIR = Path(__file__).resolve().parent
+OUTPUTS = (("en", "pcb_render.svg"), ("pl", "pcb_render.pl.svg"))
 
 W_PX, H_PX = 1500, 1280
 BOARD_W, BOARD_L = 25.0, 350.0
@@ -382,36 +387,106 @@ MARKS = {
 for i, c in enumerate(("C14", "C15", "C16", "C17", "C18")):
     MARKS[10 + i] = ((4.2, 225.65 + FRET_PITCH * i), c + ".2")
 
-ROWS = [  # number, signal, group colour, where on the board, Pico
-    (1, "GND (USB)", GROUP_COLORS["power"], "small cap left of tantalum, upper pad", "GND, pin 38"),
-    (2, "+5 V (USB)", "#d1242f", "same cap, lower pad", "VBUS, pin 40"),
-    (3, "STRUM UP", GROUP_COLORS["strum"], "D63, single pin", "GP7, pin 10"),
-    (4, "STRUM DOWN", GROUP_COLORS["strum"], "D65, single pin", "GP8, pin 11"),
-    (5, "USB D+", GROUP_COLORS["usb"], "3rd resistor above U1, lower pad", "TP3 (underside)"),
-    (6, "USB D−", GROUP_COLORS["usb"], "1st resistor above U1, lower pad", "TP2 (underside)"),
-    (7, "ZOUT", GROUP_COLORS["tilt"], "R8 upper pad (rev 3: lower)", "GP26 / ADC0, pin 31"),
-    (8, "YOUT", GROUP_COLORS["tilt"], "R9 upper pad (rev 3: lower)", "GP27 / ADC1, pin 32"),
-    (9, "XOUT", GROUP_COLORS["tilt"], "R10 upper pad (rev 3: lower)", "GP28 / ADC2, pin 34"),
-    (10, "ORANGE", FRET_COLORS["ORANGE"], "C14, pad next to R29", "GP6, pin 9"),
-    (11, "BLUE", FRET_COLORS["BLUE"], "C15, pad next to R28", "GP5, pin 7"),
-    (12, "YELLOW", FRET_COLORS["YELLOW"], "C16, pad next to R27", "GP4, pin 6"),
-    (13, "RED", FRET_COLORS["RED"], "C17, pad next to R26", "GP3, pin 5"),
-    (14, "GREEN", FRET_COLORS["GREEN"], "C18, pad next to R25", "GP2, pin 4"),
+ROWS = [  # number, signal, group colour (where on the board and the Pico pin are in TEXTS)
+    (1, "GND (USB)", GROUP_COLORS["power"]), (2, "+5 V (USB)", "#d1242f"),
+    (3, "STRUM UP", GROUP_COLORS["strum"]), (4, "STRUM DOWN", GROUP_COLORS["strum"]),
+    (5, "USB D+", GROUP_COLORS["usb"]), (6, "USB D−", GROUP_COLORS["usb"]),
+    (7, "ZOUT", GROUP_COLORS["tilt"]), (8, "YOUT", GROUP_COLORS["tilt"]), (9, "XOUT", GROUP_COLORS["tilt"]),
+    (10, "ORANGE", FRET_COLORS["ORANGE"]), (11, "BLUE", FRET_COLORS["BLUE"]),
+    (12, "YELLOW", FRET_COLORS["YELLOW"]), (13, "RED", FRET_COLORS["RED"]), (14, "GREEN", FRET_COLORS["GREEN"]),
 ]
+PICO_PINS = ["GND, pin 38", "VBUS, pin 40", "GP7, pin 10", "GP8, pin 11", None, None,
+             "GP26 / ADC0, pin 31", "GP27 / ADC1, pin 32", "GP28 / ADC2, pin 34",
+             "GP6, pin 9", "GP5, pin 7", "GP4, pin 6", "GP3, pin 5", "GP2, pin 4"]
+
+TEXTS = {
+    "en": {
+        "title": "RpiHA: where to solder on the Guitar Hero Arcade fret board",
+        "subtitle": "Raw Thrills PCB1259C, ASSY #500-00022-04 (revision 4), component side. "
+                    "Parts are simplified; positions and sizes are to scale, measured from 300 dpi scans.",
+        "whole": "Whole board",
+        "zoom": ("points 1 to 9", "points 10 to 14"),
+        "ov_notes": ("P1, guitar cable", "U1 JM60, remove", "U3 accelerometer", "sticker", "mounting hole",
+                     "ASSY #500-00022-04", "(rev 4)"),
+        "panel_a": "A   Controller area, points 1 to 9",
+        "remove": "REMOVE",
+        "panel_b": "B   Frets, 10 to 14",
+        "panel_c": "C   One fret circuit, enlarged (ORANGE shown)",
+        "c_caption": ("All five frets use the same circuit. The wire goes to the pad of C1x",
+                      "that faces R2x (the white dot on the marked photo)."),
+        "c_head": ("Fret", "Solder to"),
+        "c_row": "C{c}, by R{r}",
+        "panel_d": "D   Accelerometer resistors: rev 4 vs rev 3",
+        "d_views": (("Rev 4 (this board)", "upper pads of R8, R9, R10"), ("Rev 3", "lower pads of R8, R9, R10")),
+        "table": "Wiring list",
+        "table_head": ("Signal", "Solder point on the board", "Raspberry Pi Pico"),
+        "where": ("small cap left of tantalum, upper pad", "same cap, lower pad", "D63, single pin",
+                  "D65, single pin", "3rd resistor above U1, lower pad", "1st resistor above U1, lower pad",
+                  "R8 upper pad (rev 3: lower)", "R9 upper pad (rev 3: lower)", "R10 upper pad (rev 3: lower)",
+                  "C14, pad next to R29", "C15, pad next to R28", "C16, pad next to R27",
+                  "C17, pad next to R26", "C18, pad next to R25"),
+        "underside": "underside",
+        "notes_title": "Before you start",
+        "notes": ("1.  Desolder U1 (MC9S08JM60). The Pico takes over its USB lines and inputs.",
+                  "2.  Never plug in the Pico's micro-USB and the guitar cable at the same time.",
+                  "3.  Rev 3 boards: points 7, 8 and 9 go to the lower pads of R8, R9 and R10.",
+                  "4.  Compare with SKAN PCB/MCU.png, SKAN PCB/FRET.png and the original scans."),
+        "pico_title": "Raspberry Pi Pico (RP2040), top view",
+        "pico_gnd": "GND = any square pad",
+        "tp_note": "test pads on the underside, next to the USB socket",
+    },
+    "pl": {
+        "title": "RpiHA: gdzie lutować na płytce progów Guitar Hero Arcade",
+        "subtitle": "Raw Thrills PCB1259C, ASSY #500-00022-04 (rewizja 4), strona elementów. "
+                    "Elementy uproszczone; położenia i wymiary w skali, zmierzone ze skanów 300 dpi.",
+        "whole": "Cała płytka",
+        "zoom": ("punkty 1 do 9", "punkty 10 do 14"),
+        "ov_notes": ("P1, kabel gitary", "U1 JM60, wylutować", "U3 akcelerometr", "naklejka", "otwór montażowy",
+                     "ASSY #500-00022-04", "(rev 4)"),
+        "panel_a": "A   Okolice sterownika, punkty 1 do 9",
+        "remove": "WYLUTOWAĆ",
+        "panel_b": "B   Progi, 10 do 14",
+        "panel_c": "C   Układ jednego progu w powiększeniu (ORANGE)",
+        "c_caption": ("Wszystkie pięć progów ma ten sam układ. Przewód idzie do padu C1x",
+                      "od strony R2x (biała kropka na zdjęciu z zaznaczeniami)."),
+        "c_head": ("Próg", "Lutuj do"),
+        "c_row": "C{c}, od R{r}",
+        "panel_d": "D   Rezystory akcelerometru: rev 4 i rev 3",
+        "d_views": (("Rev 4 (ta płytka)", "górne pady R8, R9, R10"), ("Rev 3", "dolne pady R8, R9, R10")),
+        "table": "Lista połączeń",
+        "table_head": ("Sygnał", "Punkt lutowania na płytce", "Raspberry Pi Pico"),
+        "where": ("kondensator obok tantala, górny pad", "ten sam kondensator, dolny pad",
+                  "D63, pojedyncza nóżka", "D65, pojedyncza nóżka", "3. rezystor nad U1, dolny pad",
+                  "1. rezystor nad U1, dolny pad", "R8, górny pad (rev 3: dolny)", "R9, górny pad (rev 3: dolny)",
+                  "R10, górny pad (rev 3: dolny)", "C14, pad od strony R29", "C15, pad od strony R28",
+                  "C16, pad od strony R27", "C17, pad od strony R26", "C18, pad od strony R25"),
+        "underside": "spód",
+        "notes_title": "Zanim zaczniesz",
+        "notes": ("1.  Wylutuj U1 (MC9S08JM60). Pico przejmuje jego linie USB i wejścia.",
+                  "2.  Nigdy nie podłączaj jednocześnie micro-USB Pico i kabla gitary.",
+                  "3.  Płytki rev 3: punkty 7, 8 i 9 idą do dolnych padów R8, R9 i R10.",
+                  "4.  Porównaj z SKAN PCB/MCU.png, SKAN PCB/FRET.png i oryginalnymi skanami."),
+        "pico_title": "Raspberry Pi Pico (RP2040), od góry",
+        "pico_gnd": "GND = dowolny kwadratowy pad",
+        "tp_note": "pola testowe na spodzie, obok gniazda USB",
+    },
+}
 
 
-def build() -> str:
+def build(lang: str) -> str:
+    T = TEXTS[lang]
+    board.clear()
+    targets.clear()
     draw_board()
     s: list[str] = []
     defs: list[str] = []
 
     s.append(f'<rect width="{W_PX}" height="{H_PX}" fill="{PAGE}"/>')
-    s.append(text(30, 50, "RpiHA: where to solder on the Guitar Hero Arcade fret board", 26, 700))
-    s.append(text(30, 78, "Raw Thrills PCB1259C, ASSY #500-00022-04 (revision 4), component side. "
-                          "Parts are simplified; positions and sizes are to scale, measured from 300 dpi scans.", 14, 400, MUTED))
+    s.append(text(30, 50, T["title"], 26, 700))
+    s.append(text(30, 78, T["subtitle"], 14, 400, MUTED))
 
     # ---------------------------------------------------------------- overview
-    s.append(panel(20, 100, 290, 1165, "Whole board"))
+    s.append(panel(20, 100, 290, 1165, T["whole"]))
     ov = View(105, 150, 3.0, 0, 0, BOARD_W, BOARD_L + 1.5, "cov")
     defs.append(ov.clip())
     s.append(ov.open() + "</g>")
@@ -425,7 +500,7 @@ def build() -> str:
     for n, ((mx, my), _) in MARKS.items():
         x, y = ov.px(mx, my)
         s.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="2.6" fill="#ffffff" stroke="{MARK_EDGE}" stroke-width="1"/>')
-    for letter, y0, y1, label in (("A", 12.5, 79, "points 1 to 9"), ("B", 219, 351.5, "points 10 to 14")):
+    for letter, y0, y1, label in (("A", 12.5, 79, T["zoom"][0]), ("B", 219, 351.5, T["zoom"][1])):
         x0, py0 = ov.px(-2, y0)
         x1, py1 = ov.px(27, y1)
         s.append(f'<rect x="{f(x0)}" y="{f(py0)}" width="{f(x1 - x0)}" height="{f(py1 - py0)}" fill="none" '
@@ -433,10 +508,7 @@ def build() -> str:
         s.append(f'<rect x="{f(x1 + 4)}" y="{f(py0)}" width="18" height="18" rx="3" fill="{INK}"/>')
         s.append(text(x1 + 13, py0 + 13.5, letter, 12, 700, "#ffffff", "middle"))
         s.append(text(x1 + 27, py0 + 13.5, label, 11, 400, MUTED))
-    notes = [(7.3, "P1, guitar cable"), (44.6, "U1 JM60, remove"), (73.3, "U3 accelerometer"),
-             (89.3, "sticker"), (121.4, "mounting hole"), (196.0, "ASSY #500-00022-04"),
-             (203.0, "(rev 4)")]
-    for my, label in notes:
+    for my, label in zip((7.3, 44.6, 73.3, 89.3, 121.4, 196.0, 203.0), T["ov_notes"]):
         _, y = ov.px(0, my)
         s.append(text(196, y + 4, label, 11, 400, MUTED))
     for i, (name, col) in enumerate(FRET_COLORS.items()):
@@ -445,7 +517,7 @@ def build() -> str:
         s.append(text(211, y + 3.5, f"{name}  ({10 + i})", 11, 600, INK))
 
     # ---------------------------------------------------------------- A: controller area
-    s.append(panel(325, 100, 360, 865, "A   Controller area, points 1 to 9"))
+    s.append(panel(325, 100, 360, 865, T["panel_a"]))
     va = View(337, 140, 12.0, -1.5, 12.5, 28.0, 67.5, "ca")
     defs.append(va.clip())
     s.append(va.open())
@@ -453,7 +525,7 @@ def build() -> str:
     s.append(f'<rect x="{f(x - 78)}" y="{f(y - 78)}" width="156" height="156" fill="none" stroke="{TARGET}" '
              f'stroke-width="2" stroke-dasharray="6 4"/>')
     s.append(text(x, y - 8, "U1  MC9S08JM60", 12, 700, "#ffffff", "middle"))
-    s.append(text(x, y + 12, "REMOVE", 13, 700, TARGET, "middle"))
+    s.append(text(x, y + 12, T["remove"], 13, 700, TARGET, "middle"))
     for n in range(1, 10):
         s.append(va.target(MARKS[n][1]))
     for n in range(1, 10):
@@ -462,7 +534,7 @@ def build() -> str:
     s.append("</g>")
 
     # ---------------------------------------------------------------- B: frets
-    s.append(panel(700, 100, 205, 865, "B   Frets, 10 to 14"))
+    s.append(panel(700, 100, 205, 865, T["panel_b"]))
     vb = View(718, 140, 6.0, -1.5, 219.0, 28.0, 134.0, "cb")
     defs.append(vb.clip())
     s.append(vb.open())
@@ -473,7 +545,7 @@ def build() -> str:
     s.append("</g>")
 
     # ---------------------------------------------------------------- C: one fret enlarged
-    s.append(panel(920, 100, 560, 300, "C   One fret circuit, enlarged (ORANGE shown)"))
+    s.append(panel(920, 100, 560, 300, T["panel_c"]))
     vc = View(936, 140, 20.0, -0.5, 221.6, 16.0, 10.2, "cc")
     defs.append(vc.clip())
     s.append(vc.open())
@@ -484,21 +556,19 @@ def build() -> str:
     s.append(f'<line x1="{f(x)}" y1="{f(y + 13)}" x2="{f(px_ + 1)}" y2="{f(py_ - 1)}" stroke="#ffffff" stroke-width="2"/>')
     s.append(disc(x, y, 10, 13, 15))
     s.append("</g>")
-    s.append(text(936, 370, "All five frets use the same circuit. The wire goes to the pad of C1x", 12.5, 400, INK))
-    s.append(text(936, 388, "that faces R2x (the white dot on the marked photo).", 12.5, 400, INK))
-    s.append(text(1305, 160, "Fret", 12, 700, MUTED))
-    s.append(text(1360, 160, "Solder to", 12, 700, MUTED))
+    s.append(text(936, 370, T["c_caption"][0], 12.5, 400, INK))
+    s.append(text(936, 388, T["c_caption"][1], 12.5, 400, INK))
+    s.append(text(1305, 160, T["c_head"][0], 12, 700, MUTED))
+    s.append(text(1360, 160, T["c_head"][1], 12, 700, MUTED))
     for i, (name, col) in enumerate(FRET_COLORS.items()):
         y = 186 + i * 27
         s.append(disc(1316, y - 4, 10 + i, 10, 11))
         s.append(f'<rect x="1332" y="{y - 10}" width="9" height="12" rx="2" fill="{col}"/>')
-        s.append(text(1360, y, f"C{14 + i}, by R{29 - i}", 12.5, 400, INK))
+        s.append(text(1360, y, T["c_row"].format(c=14 + i, r=29 - i), 12.5, 400, INK))
 
     # ---------------------------------------------------------------- D: rev 4 vs rev 3
-    s.append(panel(920, 415, 560, 235, "D   Accelerometer resistors: rev 4 vs rev 3"))
-    for j, (title, pads, ymark, cap) in enumerate((
-            ("Rev 4 (this board)", ".1", 67.0, "upper pads of R8, R9, R10"),
-            ("Rev 3", ".2", 70.6, "lower pads of R8, R9, R10"))):
+    s.append(panel(920, 415, 560, 235, T["panel_d"]))
+    for j, ((title, cap), pads, ymark) in enumerate(zip(T["d_views"], (".1", ".2"), (67.0, 70.6))):
         x0 = 950 + j * 270
         s.append(text(x0, 465, title, 13, 700, INK))
         vd = View(x0, 475, 24.0, 10.0, 65.9, 9.8, 5.6, f"cd{j}")
@@ -513,12 +583,14 @@ def build() -> str:
         s.append(text(x0, 632, cap, 12.5, 400, INK))
 
     # ---------------------------------------------------------------- E: table
-    s.append(panel(920, 665, 560, 435, "Wiring list"))
+    s.append(panel(920, 665, 560, 435, T["table"]))
     cols = (936, 975, 1080, 1325)
-    for cx_, h in zip(cols[1:], ("Signal", "Solder point on the board", "Raspberry Pi Pico")):
+    for cx_, h in zip(cols[1:], T["table_head"]):
         s.append(text(cx_, 717, h, 12, 700, MUTED))
     s.append(f'<line x1="936" y1="725" x2="1464" y2="725" stroke="{PANEL_EDGE}"/>')
-    for i, (n, sig, col, where, pico) in enumerate(ROWS):
+    for i, ((n, sig, col), where, pico) in enumerate(zip(ROWS, T["where"], PICO_PINS)):
+        if pico is None:
+            pico = f'{"TP3" if n == 5 else "TP2"} ({T["underside"]})'
         y = 750 + i * 25
         if i % 2:
             s.append(f'<rect x="930" y="{y - 17}" width="540" height="25" fill="#f6f5f1"/>')
@@ -529,19 +601,13 @@ def build() -> str:
         s.append(text(cols[3], y, pico, 12.5, 400, INK))
 
     # ---------------------------------------------------------------- G: notes
-    s.append(panel(920, 1115, 560, 150, "Before you start"))
-    lines = [
-        "1.  Desolder U1 (MC9S08JM60). The Pico takes over its USB lines and inputs.",
-        "2.  Never plug in the Pico's micro-USB and the guitar cable at the same time.",
-        "3.  Rev 3 boards: points 7, 8 and 9 go to the lower pads of R8, R9 and R10.",
-        "4.  Compare with SKAN PCB/MCU.png, SKAN PCB/FRET.png and the original scans.",
-    ]
-    for i, ln in enumerate(lines):
+    s.append(panel(920, 1115, 560, 150, T["notes_title"]))
+    for i, ln in enumerate(T["notes"]):
         s.append(text(936, 1166 + i * 24, ln, 12.5, 400, INK))
 
     # ---------------------------------------------------------------- F: Pico
-    s.append(panel(325, 980, 580, 285, "Raspberry Pi Pico (RP2040), top view"))
-    s.append(pico_drawing(372, 1050, 9.0))
+    s.append(panel(325, 980, 580, 285, T["pico_title"]))
+    s.append(pico_drawing(372, 1050, 9.0, T))
 
     body = "\n".join(s)
     style = (f"<style>text{{font-family:'Segoe UI',Helvetica,Arial,sans-serif}}"
@@ -551,12 +617,12 @@ def build() -> str:
              f".lead{{fill:#cfcfc8;stroke:#8e8d87;stroke-width:.04}}"
              f".ic{{fill:#1c1c1e}}.res{{fill:#232323}}.cap{{fill:#c4a07b}}"
              f".tant{{fill:#e39b2f}}.tband{{fill:#b06d17}}</style>")
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W_PX}" height="{H_PX}" viewBox="0 0 {W_PX} {H_PX}">\n'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" lang="{lang}" width="{W_PX}" height="{H_PX}" viewBox="0 0 {W_PX} {H_PX}">\n'
             f'{style}\n<defs>\n<g id="board">\n' + "\n".join(board) + "\n</g>\n" + "\n".join(defs) +
             "\n</defs>\n" + body + "\n</svg>\n")
 
 
-def pico_drawing(ox, oy, k) -> str:
+def pico_drawing(ox, oy, k, T) -> str:
     """Pico 51 x 21 mm, USB on the left. Top row: pins 40..21, bottom row: pins 1..20."""
     out = []
     L, Wd = 51.0, 21.0
@@ -574,7 +640,7 @@ def pico_drawing(ox, oy, k) -> str:
     out.append(text(ux + 5.7 * k + 8, P(0, 10.5)[1] + 4, "USB", 11, 700, "#d9f0df"))
     cx, cy = P(36.0, 10.5)
     out.append(text(cx, cy - 2, "Raspberry Pi Pico", 15, 700, "#e9f6ec", "middle"))
-    out.append(text(cx, cy + 16, "GND = any square pad", 11.5, 400, "#bfe3c9", "middle"))
+    out.append(text(cx, cy + 16, T["pico_gnd"], 11.5, 400, "#bfe3c9", "middle"))
     for pin in range(1, 41):
         if pin <= 20:
             mx, my = 1.37 + (pin - 1) * 2.54, Wd - 1.61
@@ -608,10 +674,12 @@ def pico_drawing(ox, oy, k) -> str:
     out.append(text(nx + 15, ny + 4.5, "USB D+  →  TP3", 12.5, 600, INK))
     out.append(disc(nx + 140, ny, 6, 9.5, 11))
     out.append(text(nx + 155, ny + 4.5, "USB D−  →  TP2", 12.5, 600, INK))
-    out.append(text(nx, ny + 22, "test pads on the underside, next to the USB socket", 11, 400, MUTED))
+    out.append(text(nx, ny + 22, T["tp_note"], 11, 400, MUTED))
     return "".join(out)
 
 
 if __name__ == "__main__":
-    OUT.write_text(build(), encoding="utf-8")
-    print(f"written {OUT}")
+    for lang, name in OUTPUTS:
+        path = OUT_DIR / name
+        path.write_text(build(lang), encoding="utf-8")
+        print(f"written {path}")

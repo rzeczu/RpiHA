@@ -1,0 +1,870 @@
+<svg xmlns="http://www.w3.org/2000/svg" lang="pl" width="1500" height="1280" viewBox="0 0 1500 1280">
+<style>text{font-family:'Segoe UI',Helvetica,Arial,sans-serif}.silk{fill:none;stroke:#f6f3ec;stroke-width:.15}.st{fill:#f6f3ec;font-family:Arial,Helvetica,sans-serif}.pad{fill:#d9d8d2;stroke:#8e8d87;stroke-width:.05}.lead{fill:#cfcfc8;stroke:#8e8d87;stroke-width:.04}.ic{fill:#1c1c1e}.res{fill:#232323}.cap{fill:#c4a07b}.tant{fill:#e39b2f}.tband{fill:#b06d17}</style>
+<defs>
+<g id="board">
+<path d="M0 0 L25 0 L25 350 L23.75 350.9 L22.5 350 L21.25 350.9 L20 350 L18.75 350.9 L17.5 350 L16.25 350.9 L15 350 L13.75 350.9 L12.5 350 L11.25 350.9 L10 350 L8.75 350.9 L7.5 350 L6.25 350.9 L5 350 L3.75 350.9 L2.5 350 L1.25 350.9 L0 350 Z" fill="#c3272e" stroke="#7a1418" stroke-width="0.25"/>
+<rect x="1.0" y="0.4" width="12.4" height="14.3" class="silk"/>
+<circle cx="3.2" cy="10.2" r="0.72" class="pad"/>
+<circle cx="3.2" cy="10.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="3.2" cy="12.2" r="0.72" class="pad"/>
+<circle cx="3.2" cy="12.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="5.2" cy="10.2" r="0.72" class="pad"/>
+<circle cx="5.2" cy="10.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="5.2" cy="12.2" r="0.72" class="pad"/>
+<circle cx="5.2" cy="12.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="7.2" cy="10.2" r="0.72" class="pad"/>
+<circle cx="7.2" cy="10.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="7.2" cy="12.2" r="0.72" class="pad"/>
+<circle cx="7.2" cy="12.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="9.2" cy="10.2" r="0.72" class="pad"/>
+<circle cx="9.2" cy="10.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="9.2" cy="12.2" r="0.72" class="pad"/>
+<circle cx="9.2" cy="12.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="11.2" cy="10.2" r="0.72" class="pad"/>
+<circle cx="11.2" cy="10.2" r="0.36" fill="#3b3b3b"/>
+<rect x="10.5" y="11.5" width="1.4" height="1.4" class="pad" />
+<circle cx="11.2" cy="12.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="1.7" cy="8.7" r="0.5" fill="#3b3b3b"/>
+<circle cx="12.8" cy="8.7" r="0.5" fill="#3b3b3b"/>
+<text x="14.9" y="2.6" font-size="1.1" text-anchor="start" class="st" transform="rotate(90 14.9 2.6)">P1</text>
+<circle cx="19.9" cy="7.3" r="3.4" fill="#a81b21"/>
+<circle cx="19.9" cy="7.3" r="1.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="20.3" y="12.6" width="1.8" height="1.8" fill="#b8773d" stroke="#8a5427" stroke-width="0.1"/>
+<circle cx="21.2" cy="13.5" r="0.34" fill="#3b3b3b"/>
+<rect x="6.35" y="16.75" width="2.9" height="1.3" class="ic" />
+<rect x="6.55" y="18.075" width="0.6" height="0.75" class="pad" />
+<rect x="8.45" y="18.075" width="0.6" height="0.75" class="pad" />
+<rect x="7.5" y="15.975" width="0.6" height="0.75" class="pad" />
+<rect x="10.45" y="16.75" width="2.9" height="1.3" class="ic" />
+<rect x="10.65" y="18.075" width="0.6" height="0.75" class="pad" />
+<rect x="12.55" y="18.075" width="0.6" height="0.75" class="pad" />
+<rect x="11.6" y="15.975" width="0.6" height="0.75" class="pad" />
+<rect x="15.25" y="16.75" width="2.9" height="1.3" class="ic" />
+<rect x="15.45" y="18.075" width="0.6" height="0.75" class="pad" />
+<rect x="17.35" y="18.075" width="0.6" height="0.75" class="pad" />
+<rect x="16.4" y="15.975" width="0.6" height="0.75" class="pad" />
+<text x="7.8" y="21.3" font-size="0.95" text-anchor="middle" class="st">D64</text>
+<text x="12.2" y="20" font-size="0.95" text-anchor="middle" class="st">D62</text>
+<text x="16.7" y="15.2" font-size="0.95" text-anchor="middle" class="st">D68</text>
+<rect x="1.65" y="15.875" width="3.2" height="1.55" class="silk" />
+<rect x="2.45" y="16.25" width="1.6" height="0.8" class="cap" />
+<rect x="2.3" y="16.2" width="0.75" height="0.9" class="pad" />
+<rect x="3.45" y="16.2" width="0.75" height="0.9" class="pad" />
+<rect x="1.85" y="19.1" width="2.9" height="1.3" class="ic" />
+<rect x="2.05" y="20.425" width="0.6" height="0.75" class="pad" />
+<rect x="3.95" y="20.425" width="0.6" height="0.75" class="pad" />
+<rect x="3" y="18.325" width="0.6" height="0.75" class="pad" />
+<text x="0.95" y="19.75" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 0.95 19.75)">D66</text>
+<rect x="1.95" y="24.95" width="2.9" height="1.3" class="ic" />
+<rect x="2.15" y="26.275" width="0.6" height="0.75" class="pad" />
+<rect x="4.05" y="26.275" width="0.6" height="0.75" class="pad" />
+<rect x="3.1" y="24.175" width="0.6" height="0.75" class="pad" />
+<text x="0.95" y="25.6" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 0.95 25.6)">D67</text>
+<rect x="10.5" y="22.95" width="2.9" height="1.3" class="ic" />
+<rect x="10.7" y="24.275" width="0.6" height="0.75" class="pad" />
+<rect x="12.6" y="24.275" width="0.6" height="0.75" class="pad" />
+<rect x="11.65" y="22.175" width="0.6" height="0.75" class="pad" />
+<rect x="15.1" y="22.95" width="2.9" height="1.3" class="ic" />
+<rect x="15.3" y="24.275" width="0.6" height="0.75" class="pad" />
+<rect x="17.2" y="24.275" width="0.6" height="0.75" class="pad" />
+<rect x="16.25" y="22.175" width="0.6" height="0.75" class="pad" />
+<text x="9.4" y="24" font-size="0.95" text-anchor="middle" class="st">D63</text>
+<text x="18.9" y="21.5" font-size="0.95" text-anchor="middle" class="st">D65</text>
+<rect x="19.55" y="22.85" width="4.4" height="2.2" class="silk" />
+<rect x="19.9" y="23.25" width="1" height="1.4" class="pad" />
+<rect x="22.6" y="23.25" width="1" height="1.4" class="pad" />
+<rect x="20.85" y="23.35" width="1.8" height="1.2" fill="#eee7cf"/>
+<circle cx="21.75" cy="23.95" r="0.32" fill="#f3d36b"/>
+<rect x="19.55" y="25.95" width="4.4" height="2.2" class="silk" />
+<rect x="19.9" y="26.35" width="1" height="1.4" class="pad" />
+<rect x="22.6" y="26.35" width="1" height="1.4" class="pad" />
+<rect x="20.85" y="26.45" width="1.8" height="1.2" fill="#eee7cf"/>
+<circle cx="21.75" cy="27.05" r="0.32" fill="#f3d36b"/>
+<rect x="19.55" y="29.05" width="4.4" height="2.2" class="silk" />
+<rect x="19.9" y="29.45" width="1" height="1.4" class="pad" />
+<rect x="22.6" y="29.45" width="1" height="1.4" class="pad" />
+<rect x="20.85" y="29.55" width="1.8" height="1.2" fill="#eee7cf"/>
+<circle cx="21.75" cy="30.15" r="0.32" fill="#f3d36b"/>
+<text x="21.75" y="22.4" font-size="0.95" text-anchor="middle" class="st">D1</text>
+<rect x="10.525" y="26.7" width="1.55" height="3.2" class="silk" />
+<rect x="10.9" y="27.5" width="0.8" height="1.6" class="res" />
+<rect x="10.85" y="27.35" width="0.9" height="0.75" class="pad" />
+<rect x="10.85" y="28.5" width="0.9" height="0.75" class="pad" />
+<rect x="12.275" y="26.7" width="1.55" height="3.2" class="silk" />
+<rect x="12.65" y="27.5" width="0.8" height="1.6" class="res" />
+<rect x="12.6" y="27.35" width="0.9" height="0.75" class="pad" />
+<rect x="12.6" y="28.5" width="0.9" height="0.75" class="pad" />
+<rect x="14.025" y="26.7" width="1.55" height="3.2" class="silk" />
+<rect x="14.4" y="27.5" width="0.8" height="1.6" class="res" />
+<rect x="14.35" y="27.35" width="0.9" height="0.75" class="pad" />
+<rect x="14.35" y="28.5" width="0.9" height="0.75" class="pad" />
+<rect x="15.775" y="26.7" width="1.55" height="3.2" class="silk" />
+<rect x="16.15" y="27.5" width="0.8" height="1.6" class="res" />
+<rect x="16.1" y="27.35" width="0.9" height="0.75" class="pad" />
+<rect x="16.1" y="28.5" width="0.9" height="0.75" class="pad" />
+<rect x="5.65" y="28.2" width="3.6" height="4.9" class="silk" />
+<rect x="6.175" y="28.55" width="2.55" height="0.9" class="pad" />
+<rect x="6.175" y="31.85" width="2.55" height="0.9" class="pad" />
+<rect x="5.95" y="29.15" width="3" height="3" class="tant" />
+<rect x="5.95" y="29.15" width="3" height="0.6" class="tband" />
+<text x="7.45" y="27.6" font-size="0.95" text-anchor="middle" class="st">C27</text>
+<text x="5.25" y="28.2" font-size="1.1" text-anchor="middle" class="st">+</text>
+<rect x="1.65" y="31.125" width="3.2" height="1.55" class="silk" />
+<rect x="2.45" y="31.5" width="1.6" height="0.8" class="cap" />
+<rect x="2.3" y="31.45" width="0.75" height="0.9" class="pad" />
+<rect x="3.45" y="31.45" width="0.75" height="0.9" class="pad" />
+<rect x="1.65" y="37.275" width="3.2" height="1.55" class="silk" />
+<rect x="2.45" y="37.65" width="1.6" height="0.8" class="cap" />
+<rect x="2.3" y="37.6" width="0.75" height="0.9" class="pad" />
+<rect x="3.45" y="37.6" width="0.75" height="0.9" class="pad" />
+<rect x="1.75" y="34.35" width="2.9" height="1.3" class="ic" />
+<rect x="1.95" y="35.675" width="0.6" height="0.75" class="pad" />
+<rect x="3.85" y="35.675" width="0.6" height="0.75" class="pad" />
+<rect x="2.9" y="33.575" width="0.6" height="0.75" class="pad" />
+<rect x="1.65" y="39.675" width="3.2" height="1.55" class="silk" />
+<rect x="2.45" y="40.05" width="1.6" height="0.8" class="cap" />
+<rect x="2.3" y="40" width="0.75" height="0.9" class="pad" />
+<rect x="3.45" y="40" width="0.75" height="0.9" class="pad" />
+<rect x="1.65" y="41.225" width="3.2" height="1.55" class="silk" />
+<rect x="2.45" y="41.6" width="1.6" height="0.8" class="cap" />
+<rect x="2.3" y="41.55" width="0.75" height="0.9" class="pad" />
+<rect x="3.45" y="41.55" width="0.75" height="0.9" class="pad" />
+<rect x="1.65" y="43.125" width="3.2" height="1.55" class="silk" />
+<rect x="2.45" y="43.5" width="1.6" height="0.8" class="cap" />
+<rect x="2.3" y="43.45" width="0.75" height="0.9" class="pad" />
+<rect x="3.45" y="43.45" width="0.75" height="0.9" class="pad" />
+<rect x="1.65" y="46.125" width="3.2" height="1.55" class="silk" />
+<rect x="2.45" y="46.5" width="1.6" height="0.8" class="cap" />
+<rect x="2.3" y="46.45" width="0.75" height="0.9" class="pad" />
+<rect x="3.45" y="46.45" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="32.375" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="32.75" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="32.7" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="32.7" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="34.175" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="34.55" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="34.5" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="34.5" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="36.475" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="36.85" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="36.8" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="36.8" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="38.825" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="39.2" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="39.15" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="39.15" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="41.175" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="41.55" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="41.5" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="41.5" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="43.625" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="44" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="43.95" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="43.95" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="45.625" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="46" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="45.95" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="45.95" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="48.075" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="48.45" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="48.4" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="48.4" width="0.75" height="0.9" class="pad" />
+<rect x="20.05" y="50.075" width="3.2" height="1.55" class="silk" />
+<rect x="20.85" y="50.45" width="1.6" height="0.8" class="res" />
+<rect x="20.7" y="50.4" width="0.75" height="0.9" class="pad" />
+<rect x="21.85" y="50.4" width="0.75" height="0.9" class="pad" />
+<text x="23.75" y="53.6" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 23.75 53.6)">R1</text>
+<rect x="5.25" y="33.25" width="1.8" height="3.3" class="silk" />
+<rect x="5.525" y="33.9" width="1.25" height="2" class="cap" />
+<rect x="5.5" y="33.75" width="1.3" height="0.85" class="pad" />
+<rect x="5.5" y="35.2" width="1.3" height="0.85" class="pad" />
+<rect x="7.95" y="33.25" width="1.8" height="3.3" class="silk" />
+<rect x="8.225" y="33.9" width="1.25" height="2" class="res" />
+<rect x="8.2" y="33.75" width="1.3" height="0.85" class="pad" />
+<rect x="8.2" y="35.2" width="1.3" height="0.85" class="pad" />
+<rect x="9.8" y="33.25" width="1.8" height="3.3" class="silk" />
+<rect x="10.075" y="33.9" width="1.25" height="2" class="res" />
+<rect x="10.05" y="33.75" width="1.3" height="0.85" class="pad" />
+<rect x="10.05" y="35.2" width="1.3" height="0.85" class="pad" />
+<rect x="11.65" y="33.25" width="1.8" height="3.3" class="silk" />
+<rect x="11.925" y="33.9" width="1.25" height="2" class="res" />
+<rect x="11.9" y="33.75" width="1.3" height="0.85" class="pad" />
+<rect x="11.9" y="35.2" width="1.3" height="0.85" class="pad" />
+<rect x="14.3" y="34.1" width="1.3" height="1.9" class="silk" />
+<rect x="14.7" y="34.55" width="0.5" height="1" class="cap" />
+<rect x="14.65" y="34.4" width="0.6" height="0.5" class="pad" />
+<rect x="14.65" y="35.2" width="0.6" height="0.5" class="pad" />
+<rect x="15.9" y="32.3" width="2.6" height="4.6" class="silk" />
+<rect x="16.35" y="32.8" width="1.7" height="0.9" class="pad" />
+<rect x="16.35" y="35.5" width="1.7" height="0.9" class="pad" />
+<rect x="16.2" y="33.4" width="2" height="2.4" class="tant" />
+<rect x="16.2" y="35.2" width="2" height="0.6" class="tband" />
+<text x="19.25" y="37.4" font-size="1.1" text-anchor="middle" class="st">+</text>
+<rect x="8.57" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="8.57" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="40.42" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="40.42" width="1.2" height="0.36" class="lead" />
+<rect x="9.37" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="9.37" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="41.22" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="41.22" width="1.2" height="0.36" class="lead" />
+<rect x="10.17" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="10.17" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="42.02" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="42.02" width="1.2" height="0.36" class="lead" />
+<rect x="10.97" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="10.97" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="42.82" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="42.82" width="1.2" height="0.36" class="lead" />
+<rect x="11.77" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="11.77" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="43.62" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="43.62" width="1.2" height="0.36" class="lead" />
+<rect x="12.57" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="12.57" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="44.42" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="44.42" width="1.2" height="0.36" class="lead" />
+<rect x="13.37" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="13.37" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="45.22" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="45.22" width="1.2" height="0.36" class="lead" />
+<rect x="14.17" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="14.17" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="46.02" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="46.02" width="1.2" height="0.36" class="lead" />
+<rect x="14.97" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="14.97" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="46.82" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="46.82" width="1.2" height="0.36" class="lead" />
+<rect x="15.77" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="15.77" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="47.62" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="47.62" width="1.2" height="0.36" class="lead" />
+<rect x="16.57" y="38.4" width="0.36" height="1.2" class="lead" />
+<rect x="16.57" y="49.6" width="0.36" height="1.2" class="lead" />
+<rect x="6.55" y="48.42" width="1.2" height="0.36" class="lead" />
+<rect x="17.75" y="48.42" width="1.2" height="0.36" class="lead" />
+<rect x="7.75" y="39.6" width="10" height="10" class="ic" rx="0.3"/>
+<text x="5.1" y="51" font-size="0.95" text-anchor="middle" class="st">U1</text>
+<rect x="2.4" y="52.85" width="7.9" height="6" class="silk" />
+<rect x="2.15" y="52.75" width="1.3" height="1.1" class="pad" />
+<rect x="2.15" y="57.85" width="1.3" height="1.1" class="pad" />
+<rect x="9.25" y="52.75" width="1.3" height="1.1" class="pad" />
+<rect x="9.25" y="57.85" width="1.3" height="1.1" class="pad" />
+<rect x="3" y="53.5" width="6.7" height="4.7" rx="0.4" fill="#8d9094" stroke="#5f6266" stroke-width="0.15"/>
+<rect x="3.55" y="54.05" width="5.6" height="3.6" rx="0.3" fill="#a3a6aa"/>
+<text x="2.6" y="51.9" font-size="0.95" text-anchor="middle" class="st">Y1</text>
+<rect x="10.525" y="51.7" width="1.55" height="3.2" class="silk" />
+<rect x="10.9" y="52.5" width="0.8" height="1.6" class="res" />
+<rect x="10.85" y="52.35" width="0.9" height="0.75" class="pad" />
+<rect x="10.85" y="53.5" width="0.9" height="0.75" class="pad" />
+<rect x="13.575" y="51.7" width="1.55" height="3.2" class="silk" />
+<rect x="13.95" y="52.5" width="0.8" height="1.6" class="cap" />
+<rect x="13.9" y="52.35" width="0.9" height="0.75" class="pad" />
+<rect x="13.9" y="53.5" width="0.9" height="0.75" class="pad" />
+<rect x="15.825" y="51.7" width="1.55" height="3.2" class="silk" />
+<rect x="16.2" y="52.5" width="0.8" height="1.6" class="cap" />
+<rect x="16.15" y="52.35" width="0.9" height="0.75" class="pad" />
+<rect x="16.15" y="53.5" width="0.9" height="0.75" class="pad" />
+<text x="11.3" y="56.1" font-size="0.85" text-anchor="middle" class="st">R11</text>
+<text x="14.35" y="56.1" font-size="0.85" text-anchor="middle" class="st">C19</text>
+<text x="16.6" y="56.1" font-size="0.85" text-anchor="middle" class="st">C20</text>
+<circle cx="18.8" cy="52.5" r="0.45" class="pad"/><circle cx="18.8" cy="52.5" r="0.2" fill="#3b3b3b"/>
+<rect x="6.7" y="59.825" width="3.2" height="1.55" class="silk" />
+<rect x="7.5" y="60.2" width="1.6" height="0.8" class="cap" />
+<rect x="7.35" y="60.15" width="0.75" height="0.9" class="pad" />
+<rect x="8.5" y="60.15" width="0.75" height="0.9" class="pad" />
+<text x="11.25" y="61" font-size="0.85" text-anchor="middle" class="st">C11</text>
+<circle cx="3.9" cy="63.2" r="0.72" class="pad"/>
+<circle cx="3.9" cy="63.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="6.5" cy="63.2" r="0.72" class="pad"/>
+<circle cx="6.5" cy="63.2" r="0.36" fill="#3b3b3b"/>
+<circle cx="9" cy="63.2" r="0.72" class="pad"/>
+<circle cx="9" cy="63.2" r="0.36" fill="#3b3b3b"/>
+<polyline points="14,59.7 12.8,59.7 12.8,60.9" class="silk"/>
+<polyline points="17.6,59.7 18.8,59.7 18.8,60.9" class="silk"/>
+<polyline points="14,65.9 12.8,65.9 12.8,64.7" class="silk"/>
+<polyline points="17.6,65.9 18.8,65.9 18.8,64.7" class="silk"/>
+<circle cx="14.1" cy="60.15" r="0.24" class="pad"/>
+<circle cx="14.1" cy="65.55" r="0.24" class="pad"/>
+<circle cx="13.1" cy="61.25" r="0.24" class="pad"/>
+<circle cx="18.5" cy="61.25" r="0.24" class="pad"/>
+<circle cx="15.17" cy="60.15" r="0.24" class="pad"/>
+<circle cx="15.17" cy="65.55" r="0.24" class="pad"/>
+<circle cx="13.1" cy="62.29" r="0.24" class="pad"/>
+<circle cx="18.5" cy="62.29" r="0.24" class="pad"/>
+<circle cx="16.24" cy="60.15" r="0.24" class="pad"/>
+<circle cx="16.24" cy="65.55" r="0.24" class="pad"/>
+<circle cx="13.1" cy="63.33" r="0.24" class="pad"/>
+<circle cx="18.5" cy="63.33" r="0.24" class="pad"/>
+<circle cx="17.31" cy="60.15" r="0.24" class="pad"/>
+<circle cx="17.31" cy="65.55" r="0.24" class="pad"/>
+<circle cx="13.1" cy="64.37" r="0.24" class="pad"/>
+<circle cx="18.5" cy="64.37" r="0.24" class="pad"/>
+<text x="19.6" y="58.7" font-size="0.9" text-anchor="middle" class="st">U2</text>
+<rect x="19.975" y="59.8" width="1.55" height="3.2" class="silk" />
+<rect x="20.35" y="60.6" width="0.8" height="1.6" class="cap" />
+<rect x="20.3" y="60.45" width="0.9" height="0.75" class="pad" />
+<rect x="20.3" y="61.6" width="0.9" height="0.75" class="pad" />
+<text x="22.75" y="61.75" font-size="0.9" text-anchor="middle" class="st">C7</text>
+<rect x="11.875" y="67.2" width="1.55" height="3.2" class="silk" />
+<rect x="12.25" y="68" width="0.8" height="1.6" class="res" />
+<rect x="12.2" y="67.85" width="0.9" height="0.75" class="pad" />
+<rect x="12.2" y="69" width="0.9" height="0.75" class="pad" />
+<rect x="13.875" y="67.2" width="1.55" height="3.2" class="silk" />
+<rect x="14.25" y="68" width="0.8" height="1.6" class="res" />
+<rect x="14.2" y="67.85" width="0.9" height="0.75" class="pad" />
+<rect x="14.2" y="69" width="0.9" height="0.75" class="pad" />
+<rect x="15.875" y="67.2" width="1.55" height="3.2" class="silk" />
+<rect x="16.25" y="68" width="0.8" height="1.6" class="res" />
+<rect x="16.2" y="67.85" width="0.9" height="0.75" class="pad" />
+<rect x="16.2" y="69" width="0.9" height="0.75" class="pad" />
+<text x="10.95" y="69.1" font-size="0.95" text-anchor="middle" class="st">R8</text>
+<text x="18.65" y="69.1" font-size="0.95" text-anchor="middle" class="st">R10</text>
+<rect x="1.1" y="68.4" width="2" height="2" fill="#b8773d" stroke="#8a5427" stroke-width="0.1"/>
+<circle cx="2.1" cy="69.4" r="0.34" fill="#3b3b3b"/>
+<rect x="21.3" y="68.4" width="2" height="2" fill="#b8773d" stroke="#8a5427" stroke-width="0.1"/>
+<circle cx="22.3" cy="69.4" r="0.34" fill="#3b3b3b"/>
+<rect x="11.15" y="71.05" width="5.9" height="4.6" class="silk" />
+<rect x="11.4" y="71.3" width="5.4" height="4.1" class="ic" rx="0.2"/>
+<text x="12.6" y="76.75" font-size="0.95" text-anchor="middle" class="st">U3</text>
+<rect x="9.325" y="71.9" width="1.55" height="3.2" class="silk" />
+<rect x="9.7" y="72.7" width="0.8" height="1.6" class="cap" />
+<rect x="9.65" y="72.55" width="0.9" height="0.75" class="pad" />
+<rect x="9.65" y="73.7" width="0.9" height="0.75" class="pad" />
+<text x="8.4" y="73.85" font-size="0.95" text-anchor="middle" class="st">C21</text>
+<rect x="4.85" y="77.95" width="6.3" height="22.7" rx="1" fill="#ffffff" stroke="#cfcac0" stroke-width="0.12"/>
+<text x="3.3" y="79.2" font-size="0.95" text-anchor="start" class="st" transform="rotate(90 3.3 79.2)" textLength="21.5" lengthAdjust="spacingAndGlyphs">WWW.RIGHTHANDTECH.COM</text>
+<text x="1.45" y="85.8" font-size="0.95" text-anchor="start" class="st" transform="rotate(90 1.45 85.8)" textLength="6.4" lengthAdjust="spacingAndGlyphs">PCB1259C</text>
+<circle cx="20.5" cy="121.4" r="3.4" fill="#a81b21"/>
+<circle cx="20.5" cy="121.4" r="1.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<text x="17.2" y="188.6" font-size="1.9" text-anchor="start" class="st" transform="rotate(90 17.2 188.6)" textLength="19" lengthAdjust="spacingAndGlyphs">RAW THRILLS, INC.</text>
+<text x="13.4" y="190.5" font-size="1.45" text-anchor="start" class="st" transform="rotate(90 13.4 190.5)" textLength="14" lengthAdjust="spacingAndGlyphs">GUITAR HERO FRET</text>
+<text x="9.8" y="188.7" font-size="1.45" text-anchor="start" class="st" transform="rotate(90 9.8 188.7)" textLength="17" lengthAdjust="spacingAndGlyphs">ASSY #500-00022-04</text>
+<text x="6.9" y="192" font-size="1.45" text-anchor="start" class="st" transform="rotate(90 6.9 192)" textLength="11" lengthAdjust="spacingAndGlyphs">Copyright 2009</text>
+<circle cx="12.8" cy="226.9" r="3.5" fill="#a81b21"/>
+<circle cx="12.8" cy="226.9" r="1.65" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="1.7" y="224.875" width="3.2" height="1.55" class="silk" />
+<rect x="2.5" y="225.25" width="1.6" height="0.8" class="cap" />
+<rect x="2.35" y="225.2" width="0.75" height="0.9" class="pad" />
+<rect x="3.5" y="225.2" width="0.75" height="0.9" class="pad" />
+<rect x="5.3" y="224.875" width="3.2" height="1.55" class="silk" />
+<rect x="6.1" y="225.25" width="1.6" height="0.8" class="res" />
+<rect x="5.95" y="225.2" width="0.75" height="0.9" class="pad" />
+<rect x="7.1" y="225.2" width="0.75" height="0.9" class="pad" />
+<rect x="4.2" y="227.15" width="1.3" height="2.9" class="ic" />
+<rect x="3.425" y="227.35" width="0.75" height="0.6" class="pad" />
+<rect x="3.425" y="229.25" width="0.75" height="0.6" class="pad" />
+<rect x="5.525" y="228.3" width="0.75" height="0.6" class="pad" />
+<rect x="6.925" y="227" width="1.55" height="3.2" class="silk" />
+<rect x="7.3" y="227.8" width="0.8" height="1.6" class="res" />
+<rect x="7.25" y="227.65" width="0.9" height="0.75" class="pad" />
+<rect x="7.25" y="228.8" width="0.9" height="0.75" class="pad" />
+<text x="3.3" y="224.5" font-size="0.9" text-anchor="middle" class="st">C14</text>
+<text x="6.9" y="224.5" font-size="0.9" text-anchor="middle" class="st">R29</text>
+<text x="1.75" y="228.6" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 1.75 228.6)">D59</text>
+<text x="7.7" y="231.15" font-size="0.9" text-anchor="middle" class="st">R20</text>
+<path d="M5.2 233.6 H20 M5.2 244.4 H20 M4.2 234.6 V243.4 M21 234.6 V243.4" class="silk"/>
+<circle cx="4.2" cy="233.6" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="233.6" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="4.2" cy="244.4" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="244.4" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="233.6" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="233.6" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="244.4" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="244.4" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="6.6" y="235.1" width="11.9" height="7.8" rx="3.9" fill="#151515"/>
+<line x1="7.6" y1="237.092" x2="7.6" y2="240.308" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.22" y1="237.136" x2="8.22" y2="241.464" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.84" y1="236.171" x2="8.84" y2="241.229" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="9.46" y1="236.541" x2="9.46" y2="242.059" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.08" y1="235.823" x2="10.08" y2="241.577" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.7" y1="236.4" x2="10.7" y2="242.2" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.32" y1="235.8" x2="11.32" y2="241.6" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.94" y1="236.4" x2="11.94" y2="242.2" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="12.56" y1="235.8" x2="12.56" y2="241.6" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.18" y1="236.4" x2="13.18" y2="242.2" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.8" y1="235.8" x2="13.8" y2="241.6" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="14.42" y1="236.4" x2="14.42" y2="242.2" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.04" y1="235.825" x2="15.04" y2="241.575" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.66" y1="236.547" x2="15.66" y2="242.053" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.28" y1="236.18" x2="16.28" y2="241.22" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.9" y1="237.15" x2="16.9" y2="241.45" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="17.52" y1="237.115" x2="17.52" y2="240.285" stroke="#6a6a6a" stroke-width="0.2"/>
+<text x="21.8" y="233" font-size="2" text-anchor="start" class="st" transform="rotate(90 21.8 233)" textLength="12.33" lengthAdjust="spacingAndGlyphs">SW_ORANGE</text>
+<circle cx="12.8" cy="250.88" r="3.5" fill="#a81b21"/>
+<circle cx="12.8" cy="250.88" r="1.65" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="1.7" y="248.855" width="3.2" height="1.55" class="silk" />
+<rect x="2.5" y="249.23" width="1.6" height="0.8" class="cap" />
+<rect x="2.35" y="249.18" width="0.75" height="0.9" class="pad" />
+<rect x="3.5" y="249.18" width="0.75" height="0.9" class="pad" />
+<rect x="5.3" y="248.855" width="3.2" height="1.55" class="silk" />
+<rect x="6.1" y="249.23" width="1.6" height="0.8" class="res" />
+<rect x="5.95" y="249.18" width="0.75" height="0.9" class="pad" />
+<rect x="7.1" y="249.18" width="0.75" height="0.9" class="pad" />
+<rect x="4.2" y="251.13" width="1.3" height="2.9" class="ic" />
+<rect x="3.425" y="251.33" width="0.75" height="0.6" class="pad" />
+<rect x="3.425" y="253.23" width="0.75" height="0.6" class="pad" />
+<rect x="5.525" y="252.28" width="0.75" height="0.6" class="pad" />
+<rect x="6.925" y="250.98" width="1.55" height="3.2" class="silk" />
+<rect x="7.3" y="251.78" width="0.8" height="1.6" class="res" />
+<rect x="7.25" y="251.63" width="0.9" height="0.75" class="pad" />
+<rect x="7.25" y="252.78" width="0.9" height="0.75" class="pad" />
+<text x="3.3" y="248.48" font-size="0.9" text-anchor="middle" class="st">C15</text>
+<text x="6.9" y="248.48" font-size="0.9" text-anchor="middle" class="st">R28</text>
+<text x="1.75" y="252.58" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 1.75 252.58)">D61</text>
+<text x="7.7" y="255.13" font-size="0.9" text-anchor="middle" class="st">R21</text>
+<path d="M5.2 257.58 H20 M5.2 268.38 H20 M4.2 258.58 V267.38 M21 258.58 V267.38" class="silk"/>
+<circle cx="4.2" cy="257.58" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="257.58" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="4.2" cy="268.38" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="268.38" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="257.58" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="257.58" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="268.38" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="268.38" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="6.6" y="259.08" width="11.9" height="7.8" rx="3.9" fill="#151515"/>
+<line x1="7.6" y1="261.072" x2="7.6" y2="264.288" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.22" y1="261.116" x2="8.22" y2="265.444" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.84" y1="260.151" x2="8.84" y2="265.209" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="9.46" y1="260.521" x2="9.46" y2="266.039" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.08" y1="259.803" x2="10.08" y2="265.557" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.7" y1="260.38" x2="10.7" y2="266.18" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.32" y1="259.78" x2="11.32" y2="265.58" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.94" y1="260.38" x2="11.94" y2="266.18" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="12.56" y1="259.78" x2="12.56" y2="265.58" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.18" y1="260.38" x2="13.18" y2="266.18" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.8" y1="259.78" x2="13.8" y2="265.58" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="14.42" y1="260.38" x2="14.42" y2="266.18" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.04" y1="259.805" x2="15.04" y2="265.555" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.66" y1="260.527" x2="15.66" y2="266.033" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.28" y1="260.16" x2="16.28" y2="265.2" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.9" y1="261.13" x2="16.9" y2="265.43" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="17.52" y1="261.095" x2="17.52" y2="264.265" stroke="#6a6a6a" stroke-width="0.2"/>
+<text x="21.8" y="256.98" font-size="2" text-anchor="start" class="st" transform="rotate(90 21.8 256.98)" textLength="9.59" lengthAdjust="spacingAndGlyphs">SW_BLUE</text>
+<circle cx="12.8" cy="274.86" r="3.5" fill="#a81b21"/>
+<circle cx="12.8" cy="274.86" r="1.65" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="1.7" y="272.835" width="3.2" height="1.55" class="silk" />
+<rect x="2.5" y="273.21" width="1.6" height="0.8" class="cap" />
+<rect x="2.35" y="273.16" width="0.75" height="0.9" class="pad" />
+<rect x="3.5" y="273.16" width="0.75" height="0.9" class="pad" />
+<rect x="5.3" y="272.835" width="3.2" height="1.55" class="silk" />
+<rect x="6.1" y="273.21" width="1.6" height="0.8" class="res" />
+<rect x="5.95" y="273.16" width="0.75" height="0.9" class="pad" />
+<rect x="7.1" y="273.16" width="0.75" height="0.9" class="pad" />
+<rect x="4.2" y="275.11" width="1.3" height="2.9" class="ic" />
+<rect x="3.425" y="275.31" width="0.75" height="0.6" class="pad" />
+<rect x="3.425" y="277.21" width="0.75" height="0.6" class="pad" />
+<rect x="5.525" y="276.26" width="0.75" height="0.6" class="pad" />
+<rect x="6.925" y="274.96" width="1.55" height="3.2" class="silk" />
+<rect x="7.3" y="275.76" width="0.8" height="1.6" class="res" />
+<rect x="7.25" y="275.61" width="0.9" height="0.75" class="pad" />
+<rect x="7.25" y="276.76" width="0.9" height="0.75" class="pad" />
+<text x="3.3" y="272.46" font-size="0.9" text-anchor="middle" class="st">C16</text>
+<text x="6.9" y="272.46" font-size="0.9" text-anchor="middle" class="st">R27</text>
+<text x="1.75" y="276.56" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 1.75 276.56)">D58</text>
+<text x="7.7" y="279.11" font-size="0.9" text-anchor="middle" class="st">R22</text>
+<path d="M5.2 281.56 H20 M5.2 292.36 H20 M4.2 282.56 V291.36 M21 282.56 V291.36" class="silk"/>
+<circle cx="4.2" cy="281.56" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="281.56" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="4.2" cy="292.36" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="292.36" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="281.56" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="281.56" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="292.36" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="292.36" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="6.6" y="283.06" width="11.9" height="7.8" rx="3.9" fill="#151515"/>
+<line x1="7.6" y1="285.052" x2="7.6" y2="288.268" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.22" y1="285.096" x2="8.22" y2="289.424" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.84" y1="284.131" x2="8.84" y2="289.189" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="9.46" y1="284.501" x2="9.46" y2="290.019" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.08" y1="283.783" x2="10.08" y2="289.537" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.7" y1="284.36" x2="10.7" y2="290.16" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.32" y1="283.76" x2="11.32" y2="289.56" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.94" y1="284.36" x2="11.94" y2="290.16" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="12.56" y1="283.76" x2="12.56" y2="289.56" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.18" y1="284.36" x2="13.18" y2="290.16" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.8" y1="283.76" x2="13.8" y2="289.56" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="14.42" y1="284.36" x2="14.42" y2="290.16" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.04" y1="283.785" x2="15.04" y2="289.535" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.66" y1="284.507" x2="15.66" y2="290.013" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.28" y1="284.14" x2="16.28" y2="289.18" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.9" y1="285.11" x2="16.9" y2="289.41" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="17.52" y1="285.075" x2="17.52" y2="288.245" stroke="#6a6a6a" stroke-width="0.2"/>
+<text x="21.8" y="280.96" font-size="2" text-anchor="start" class="st" transform="rotate(90 21.8 280.96)" textLength="12.33" lengthAdjust="spacingAndGlyphs">SW_YELLOW</text>
+<circle cx="12.8" cy="298.84" r="3.5" fill="#a81b21"/>
+<circle cx="12.8" cy="298.84" r="1.65" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21.85" cy="298.84" r="2.5" fill="#a81b21"/>
+<circle cx="21.85" cy="298.84" r="1.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="1.7" y="296.815" width="3.2" height="1.55" class="silk" />
+<rect x="2.5" y="297.19" width="1.6" height="0.8" class="cap" />
+<rect x="2.35" y="297.14" width="0.75" height="0.9" class="pad" />
+<rect x="3.5" y="297.14" width="0.75" height="0.9" class="pad" />
+<rect x="5.3" y="296.815" width="3.2" height="1.55" class="silk" />
+<rect x="6.1" y="297.19" width="1.6" height="0.8" class="res" />
+<rect x="5.95" y="297.14" width="0.75" height="0.9" class="pad" />
+<rect x="7.1" y="297.14" width="0.75" height="0.9" class="pad" />
+<rect x="4.2" y="299.09" width="1.3" height="2.9" class="ic" />
+<rect x="3.425" y="299.29" width="0.75" height="0.6" class="pad" />
+<rect x="3.425" y="301.19" width="0.75" height="0.6" class="pad" />
+<rect x="5.525" y="300.24" width="0.75" height="0.6" class="pad" />
+<rect x="6.925" y="298.94" width="1.55" height="3.2" class="silk" />
+<rect x="7.3" y="299.74" width="0.8" height="1.6" class="res" />
+<rect x="7.25" y="299.59" width="0.9" height="0.75" class="pad" />
+<rect x="7.25" y="300.74" width="0.9" height="0.75" class="pad" />
+<text x="3.3" y="296.44" font-size="0.9" text-anchor="middle" class="st">C17</text>
+<text x="6.9" y="296.44" font-size="0.9" text-anchor="middle" class="st">R26</text>
+<text x="1.75" y="300.54" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 1.75 300.54)">D60</text>
+<text x="7.7" y="303.09" font-size="0.9" text-anchor="middle" class="st">R23</text>
+<path d="M5.2 305.54 H20 M5.2 316.34 H20 M4.2 306.54 V315.34 M21 306.54 V315.34" class="silk"/>
+<circle cx="4.2" cy="305.54" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="305.54" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="4.2" cy="316.34" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="316.34" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="305.54" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="305.54" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="316.34" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="316.34" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="6.6" y="307.04" width="11.9" height="7.8" rx="3.9" fill="#151515"/>
+<line x1="7.6" y1="309.032" x2="7.6" y2="312.248" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.22" y1="309.076" x2="8.22" y2="313.404" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.84" y1="308.111" x2="8.84" y2="313.169" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="9.46" y1="308.481" x2="9.46" y2="313.999" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.08" y1="307.763" x2="10.08" y2="313.517" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.7" y1="308.34" x2="10.7" y2="314.14" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.32" y1="307.74" x2="11.32" y2="313.54" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.94" y1="308.34" x2="11.94" y2="314.14" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="12.56" y1="307.74" x2="12.56" y2="313.54" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.18" y1="308.34" x2="13.18" y2="314.14" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.8" y1="307.74" x2="13.8" y2="313.54" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="14.42" y1="308.34" x2="14.42" y2="314.14" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.04" y1="307.765" x2="15.04" y2="313.515" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.66" y1="308.487" x2="15.66" y2="313.993" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.28" y1="308.12" x2="16.28" y2="313.16" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.9" y1="309.09" x2="16.9" y2="313.39" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="17.52" y1="309.055" x2="17.52" y2="312.225" stroke="#6a6a6a" stroke-width="0.2"/>
+<text x="21.8" y="304.94" font-size="2" text-anchor="start" class="st" transform="rotate(90 21.8 304.94)" textLength="8.22" lengthAdjust="spacingAndGlyphs">SW_RED</text>
+<circle cx="12.8" cy="322.82" r="3.5" fill="#a81b21"/>
+<circle cx="12.8" cy="322.82" r="1.65" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21.85" cy="322.82" r="2.5" fill="#a81b21"/>
+<circle cx="21.85" cy="322.82" r="1.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="1.7" y="320.795" width="3.2" height="1.55" class="silk" />
+<rect x="2.5" y="321.17" width="1.6" height="0.8" class="cap" />
+<rect x="2.35" y="321.12" width="0.75" height="0.9" class="pad" />
+<rect x="3.5" y="321.12" width="0.75" height="0.9" class="pad" />
+<rect x="5.3" y="320.795" width="3.2" height="1.55" class="silk" />
+<rect x="6.1" y="321.17" width="1.6" height="0.8" class="res" />
+<rect x="5.95" y="321.12" width="0.75" height="0.9" class="pad" />
+<rect x="7.1" y="321.12" width="0.75" height="0.9" class="pad" />
+<rect x="4.2" y="323.07" width="1.3" height="2.9" class="ic" />
+<rect x="3.425" y="323.27" width="0.75" height="0.6" class="pad" />
+<rect x="3.425" y="325.17" width="0.75" height="0.6" class="pad" />
+<rect x="5.525" y="324.22" width="0.75" height="0.6" class="pad" />
+<rect x="6.925" y="322.92" width="1.55" height="3.2" class="silk" />
+<rect x="7.3" y="323.72" width="0.8" height="1.6" class="res" />
+<rect x="7.25" y="323.57" width="0.9" height="0.75" class="pad" />
+<rect x="7.25" y="324.72" width="0.9" height="0.75" class="pad" />
+<text x="3.3" y="320.42" font-size="0.9" text-anchor="middle" class="st">C18</text>
+<text x="6.9" y="320.42" font-size="0.9" text-anchor="middle" class="st">R25</text>
+<text x="1.75" y="324.52" font-size="0.9" text-anchor="middle" class="st" transform="rotate(-90 1.75 324.52)">D57</text>
+<text x="7.7" y="327.07" font-size="0.9" text-anchor="middle" class="st">R24</text>
+<path d="M5.2 329.52 H20 M5.2 340.32 H20 M4.2 330.52 V339.32 M21 330.52 V339.32" class="silk"/>
+<circle cx="4.2" cy="329.52" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="329.52" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="4.2" cy="340.32" r="1.15" fill="#a81b21"/>
+<circle cx="4.2" cy="340.32" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="329.52" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="329.52" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<circle cx="21" cy="340.32" r="1.15" fill="#a81b21"/>
+<circle cx="21" cy="340.32" r="0.8" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+<rect x="6.6" y="331.02" width="11.9" height="7.8" rx="3.9" fill="#151515"/>
+<line x1="7.6" y1="333.012" x2="7.6" y2="336.228" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.22" y1="333.056" x2="8.22" y2="337.384" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="8.84" y1="332.091" x2="8.84" y2="337.149" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="9.46" y1="332.461" x2="9.46" y2="337.979" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.08" y1="331.743" x2="10.08" y2="337.497" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="10.7" y1="332.32" x2="10.7" y2="338.12" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.32" y1="331.72" x2="11.32" y2="337.52" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="11.94" y1="332.32" x2="11.94" y2="338.12" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="12.56" y1="331.72" x2="12.56" y2="337.52" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.18" y1="332.32" x2="13.18" y2="338.12" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="13.8" y1="331.72" x2="13.8" y2="337.52" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="14.42" y1="332.32" x2="14.42" y2="338.12" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.04" y1="331.745" x2="15.04" y2="337.495" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="15.66" y1="332.467" x2="15.66" y2="337.973" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.28" y1="332.1" x2="16.28" y2="337.14" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="16.9" y1="333.07" x2="16.9" y2="337.37" stroke="#6a6a6a" stroke-width="0.2"/>
+<line x1="17.52" y1="333.035" x2="17.52" y2="336.205" stroke="#6a6a6a" stroke-width="0.2"/>
+<text x="21.8" y="328.92" font-size="2" text-anchor="start" class="st" transform="rotate(90 21.8 328.92)" textLength="10.96" lengthAdjust="spacingAndGlyphs">SW_GREEN</text>
+<circle cx="12.8" cy="346.8" r="3.5" fill="#a81b21"/>
+<circle cx="12.8" cy="346.8" r="1.65" fill="#ffffff" stroke="#c9c6bf" stroke-width="0.12"/>
+</g>
+<clipPath id="cov"><rect x="105" y="150" width="75" height="1054.5" rx="4"/></clipPath>
+<clipPath id="ca"><rect x="337" y="140" width="336" height="810" rx="4"/></clipPath>
+<clipPath id="cb"><rect x="718" y="140" width="168" height="804" rx="4"/></clipPath>
+<clipPath id="cc"><rect x="936" y="140" width="320" height="204" rx="4"/></clipPath>
+<clipPath id="cd0"><rect x="950" y="475" width="235.2" height="134.4" rx="4"/></clipPath>
+<clipPath id="cd1"><rect x="1220" y="475" width="235.2" height="134.4" rx="4"/></clipPath>
+</defs>
+<rect width="1500" height="1280" fill="#f4f2ed"/>
+<text x="30" y="50" font-size="26" font-weight="700" fill="#1f2328" text-anchor="start" >RpiHA: gdzie lutować na płytce progów Guitar Hero Arcade</text>
+<text x="30" y="78" font-size="14" font-weight="400" fill="#5b636c" text-anchor="start" >Raw Thrills PCB1259C, ASSY #500-00022-04 (rewizja 4), strona elementów. Elementy uproszczone; położenia i wymiary w skali, zmierzone ze skanów 300 dpi.</text>
+<rect x="20" y="100" width="290" height="1165" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="34" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >Cała płytka</text>
+<g clip-path="url(#cov)"><rect x="105" y="150" width="75" height="1054.5" fill="#e9e6df"/><use href="#board" transform="translate(105 150) scale(3)"/></g>
+<line x1="92" y1="150" x2="100" y2="150" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="154" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >0</text>
+<line x1="96" y1="180" x2="100" y2="180" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="210" x2="100" y2="210" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="240" x2="100" y2="240" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="270" x2="100" y2="270" stroke="#5b636c" stroke-width="1"/>
+<line x1="92" y1="300" x2="100" y2="300" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="304" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >50</text>
+<line x1="96" y1="330" x2="100" y2="330" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="360" x2="100" y2="360" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="390" x2="100" y2="390" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="420" x2="100" y2="420" stroke="#5b636c" stroke-width="1"/>
+<line x1="92" y1="450" x2="100" y2="450" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="454" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >100</text>
+<line x1="96" y1="480" x2="100" y2="480" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="510" x2="100" y2="510" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="540" x2="100" y2="540" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="570" x2="100" y2="570" stroke="#5b636c" stroke-width="1"/>
+<line x1="92" y1="600" x2="100" y2="600" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="604" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >150</text>
+<line x1="96" y1="630" x2="100" y2="630" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="660" x2="100" y2="660" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="690" x2="100" y2="690" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="720" x2="100" y2="720" stroke="#5b636c" stroke-width="1"/>
+<line x1="92" y1="750" x2="100" y2="750" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="754" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >200</text>
+<line x1="96" y1="780" x2="100" y2="780" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="810" x2="100" y2="810" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="840" x2="100" y2="840" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="870" x2="100" y2="870" stroke="#5b636c" stroke-width="1"/>
+<line x1="92" y1="900" x2="100" y2="900" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="904" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >250</text>
+<line x1="96" y1="930" x2="100" y2="930" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="960" x2="100" y2="960" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="990" x2="100" y2="990" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="1020" x2="100" y2="1020" stroke="#5b636c" stroke-width="1"/>
+<line x1="92" y1="1050" x2="100" y2="1050" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="1054" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >300</text>
+<line x1="96" y1="1080" x2="100" y2="1080" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="1110" x2="100" y2="1110" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="1140" x2="100" y2="1140" stroke="#5b636c" stroke-width="1"/>
+<line x1="96" y1="1170" x2="100" y2="1170" stroke="#5b636c" stroke-width="1"/>
+<line x1="92" y1="1200" x2="100" y2="1200" stroke="#5b636c" stroke-width="1"/>
+<text x="88" y="1204" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >350</text>
+<text x="88" y="140" font-size="10" font-weight="400" fill="#5b636c" text-anchor="end" >mm</text>
+<circle cx="149.7" cy="250.5" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="149.7" cy="260.1" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="140.55" cy="214.8" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="154.35" cy="214.8" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="142.65" cy="259.8" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="131.25" cy="259.8" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="142.8" cy="351" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="148.95" cy="351" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="154.95" cy="351" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="117.6" cy="826.95" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="117.6" cy="898.89" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="117.6" cy="970.83" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="117.6" cy="1042.77" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<circle cx="117.6" cy="1114.71" r="2.6" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/>
+<rect x="99" y="187.5" width="87" height="199.5" fill="none" stroke="#1f2328" stroke-width="1.2" stroke-dasharray="5 3"/>
+<rect x="190" y="187.5" width="18" height="18" rx="3" fill="#1f2328"/>
+<text x="199" y="201" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" >A</text>
+<text x="213" y="201" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >punkty 1 do 9</text>
+<rect x="99" y="807" width="87" height="397.5" fill="none" stroke="#1f2328" stroke-width="1.2" stroke-dasharray="5 3"/>
+<rect x="190" y="807" width="18" height="18" rx="3" fill="#1f2328"/>
+<text x="199" y="820.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" >B</text>
+<text x="213" y="820.5" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >punkty 10 do 14</text>
+<text x="196" y="175.9" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >P1, kabel gitary</text>
+<text x="196" y="287.8" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >U1 JM60, wylutować</text>
+<text x="196" y="373.9" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >U3 akcelerometr</text>
+<text x="196" y="421.9" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >naklejka</text>
+<text x="196" y="518.2" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >otwór montażowy</text>
+<text x="196" y="742" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >ASSY #500-00022-04</text>
+<text x="196" y="763" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >(rev 4)</text>
+<rect x="196" y="861" width="10" height="10" rx="2" fill="#ee8a00"/>
+<text x="211" y="870.5" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start" >ORANGE  (10)</text>
+<rect x="196" y="932.94" width="10" height="10" rx="2" fill="#1f6fe0"/>
+<text x="211" y="942.44" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start" >BLUE  (11)</text>
+<rect x="196" y="1004.88" width="10" height="10" rx="2" fill="#e8b800"/>
+<text x="211" y="1014.38" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start" >YELLOW  (12)</text>
+<rect x="196" y="1076.82" width="10" height="10" rx="2" fill="#e03131"/>
+<text x="211" y="1086.32" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start" >RED  (13)</text>
+<rect x="196" y="1148.76" width="10" height="10" rx="2" fill="#2f9e44"/>
+<text x="211" y="1158.26" font-size="11" font-weight="600" fill="#1f2328" text-anchor="start" >GREEN  (14)</text>
+<rect x="325" y="100" width="360" height="865" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="339" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >A   Okolice sterownika, punkty 1 do 9</text>
+<g clip-path="url(#ca)"><rect x="337" y="140" width="336" height="810" fill="#e9e6df"/><use href="#board" transform="translate(355 -10) scale(12)"/>
+<rect x="430" y="447.2" width="156" height="156" fill="none" stroke="#ffd21f" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="508" y="517.2" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" >U1  MC9S08JM60</text>
+<text x="508" y="537.2" font-size="13" font-weight="700" fill="#ffd21f" text-anchor="middle" >WYLUTOWAĆ</text>
+<rect x="529.84" y="401.84" width="9.12" height="7.92" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="529.84" y="411.44" width="9.12" height="7.92" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="493.84" y="255.14" width="9.12" height="10.92" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="549.04" y="255.14" width="9.12" height="10.92" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="496.84" y="411.44" width="17.52" height="12.12" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="452.44" y="411.44" width="17.52" height="12.12" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="500.44" y="803.24" width="12.72" height="10.92" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="524.44" y="803.24" width="12.72" height="10.92" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<rect x="548.44" y="803.24" width="12.72" height="10.92" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<circle cx="533.8" cy="392" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="533.8" y="396.68" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">1</text>
+<circle cx="533.8" cy="430.4" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="533.8" y="435.08" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">2</text>
+<circle cx="497.2" cy="249.2" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="497.2" y="253.88" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">3</text>
+<circle cx="552.4" cy="249.2" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="552.4" y="253.88" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">4</text>
+<circle cx="505.6" cy="429.2" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="505.6" y="433.88" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">5</text>
+<circle cx="460" cy="429.2" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="460" y="433.88" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">6</text>
+<circle cx="506.2" cy="794" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="506.2" y="798.68" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">7</text>
+<circle cx="530.8" cy="794" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="530.8" y="798.68" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">8</text>
+<circle cx="554.8" cy="794" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="554.8" y="798.68" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">9</text>
+</g>
+<rect x="700" y="100" width="205" height="865" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="714" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >B   Progi, 10 do 14</text>
+<g clip-path="url(#cb)"><rect x="718" y="140" width="168" height="804" fill="#e9e6df"/><use href="#board" transform="translate(727 -1174) scale(6)"/>
+<rect x="747.52" y="176.72" width="5.46" height="6.36" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<circle cx="752.2" cy="179.9" r="8.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/><text x="752.2" y="183.5" font-size="10" font-weight="700" fill="#1c3fd1" text-anchor="middle">10</text>
+<rect x="747.52" y="320.6" width="5.46" height="6.36" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<circle cx="752.2" cy="323.78" r="8.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/><text x="752.2" y="327.38" font-size="10" font-weight="700" fill="#1c3fd1" text-anchor="middle">11</text>
+<rect x="747.52" y="464.48" width="5.46" height="6.36" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<circle cx="752.2" cy="467.66" r="8.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/><text x="752.2" y="471.26" font-size="10" font-weight="700" fill="#1c3fd1" text-anchor="middle">12</text>
+<rect x="747.52" y="608.36" width="5.46" height="6.36" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<circle cx="752.2" cy="611.54" r="8.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/><text x="752.2" y="615.14" font-size="10" font-weight="700" fill="#1c3fd1" text-anchor="middle">13</text>
+<rect x="747.52" y="752.24" width="5.46" height="6.36" fill="#ffd21f" stroke="#1b1b1b" stroke-width="0.8"/>
+<circle cx="752.2" cy="755.42" r="8.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1"/><text x="752.2" y="759.02" font-size="10" font-weight="700" fill="#1c3fd1" text-anchor="middle">14</text>
+</g>
+<rect x="920" y="100" width="560" height="300" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="934" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >C   Układ jednego progu w powiększeniu (ORANGE)</text>
+<g clip-path="url(#cc)"><rect x="936" y="140" width="320" height="204" fill="#e9e6df"/><use href="#board" transform="translate(946 -4292) scale(20)"/>
+<rect x="1014.4" y="210.4" width="18.2" height="21.2" fill="#ffd21f" stroke="#1b1b1b" stroke-width="1"/>
+<line x1="1049" y1="176" x2="1032" y2="211" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1049" cy="163" r="13" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.444"/><text x="1049" y="168.4" font-size="15" font-weight="700" fill="#1c3fd1" text-anchor="middle">10</text>
+</g>
+<text x="936" y="370" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >Wszystkie pięć progów ma ten sam układ. Przewód idzie do padu C1x</text>
+<text x="936" y="388" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >od strony R2x (biała kropka na zdjęciu z zaznaczeniami).</text>
+<text x="1305" y="160" font-size="12" font-weight="700" fill="#5b636c" text-anchor="start" >Próg</text>
+<text x="1360" y="160" font-size="12" font-weight="700" fill="#5b636c" text-anchor="start" >Lutuj do</text>
+<circle cx="1316" cy="182" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="1316" y="185.96" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">10</text>
+<rect x="1332" y="176" width="9" height="12" rx="2" fill="#ee8a00"/>
+<text x="1360" y="186" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C14, od R29</text>
+<circle cx="1316" cy="209" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="1316" y="212.96" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">11</text>
+<rect x="1332" y="203" width="9" height="12" rx="2" fill="#1f6fe0"/>
+<text x="1360" y="213" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C15, od R28</text>
+<circle cx="1316" cy="236" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="1316" y="239.96" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">12</text>
+<rect x="1332" y="230" width="9" height="12" rx="2" fill="#e8b800"/>
+<text x="1360" y="240" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C16, od R27</text>
+<circle cx="1316" cy="263" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="1316" y="266.96" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">13</text>
+<rect x="1332" y="257" width="9" height="12" rx="2" fill="#e03131"/>
+<text x="1360" y="267" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C17, od R26</text>
+<circle cx="1316" cy="290" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="1316" y="293.96" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">14</text>
+<rect x="1332" y="284" width="9" height="12" rx="2" fill="#2f9e44"/>
+<text x="1360" y="294" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C18, od R25</text>
+<rect x="920" y="415" width="560" height="235" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="934" y="439" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >D   Rezystory akcelerometru: rev 4 i rev 3</text>
+<text x="950" y="465" font-size="13" font-weight="700" fill="#1f2328" text-anchor="start" >Rev 4 (ta płytka)</text>
+<g clip-path="url(#cd0)"><rect x="950" y="475" width="235.2" height="134.4" fill="#e9e6df"/><use href="#board" transform="translate(710 -1106.6) scale(24)"/>
+<rect x="1000.88" y="519.88" width="25.44" height="21.84" fill="#ffd21f" stroke="#1b1b1b" stroke-width="1.2"/>
+<circle cx="1012.4" cy="501.4" r="11" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.222"/><text x="1012.4" y="506.08" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">7</text>
+<rect x="1048.88" y="519.88" width="25.44" height="21.84" fill="#ffd21f" stroke="#1b1b1b" stroke-width="1.2"/>
+<circle cx="1061.6" cy="501.4" r="11" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.222"/><text x="1061.6" y="506.08" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">8</text>
+<rect x="1096.88" y="519.88" width="25.44" height="21.84" fill="#ffd21f" stroke="#1b1b1b" stroke-width="1.2"/>
+<circle cx="1109.6" cy="501.4" r="11" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.222"/><text x="1109.6" y="506.08" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">9</text>
+</g>
+<text x="950" y="632" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >górne pady R8, R9, R10</text>
+<text x="1220" y="465" font-size="13" font-weight="700" fill="#1f2328" text-anchor="start" >Rev 3</text>
+<g clip-path="url(#cd1)"><rect x="1220" y="475" width="235.2" height="134.4" fill="#e9e6df"/><use href="#board" transform="translate(980 -1106.6) scale(24)"/>
+<rect x="1270.88" y="547.48" width="25.44" height="21.84" fill="#ffd21f" stroke="#1b1b1b" stroke-width="1.2"/>
+<circle cx="1282.4" cy="587.8" r="11" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.222"/><text x="1282.4" y="592.48" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">7</text>
+<rect x="1318.88" y="547.48" width="25.44" height="21.84" fill="#ffd21f" stroke="#1b1b1b" stroke-width="1.2"/>
+<circle cx="1331.6" cy="587.8" r="11" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.222"/><text x="1331.6" y="592.48" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">8</text>
+<rect x="1366.88" y="547.48" width="25.44" height="21.84" fill="#ffd21f" stroke="#1b1b1b" stroke-width="1.2"/>
+<circle cx="1379.6" cy="587.8" r="11" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.222"/><text x="1379.6" y="592.48" font-size="13" font-weight="700" fill="#1c3fd1" text-anchor="middle">9</text>
+</g>
+<text x="1220" y="632" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >dolne pady R8, R9, R10</text>
+<rect x="920" y="665" width="560" height="435" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="934" y="689" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >Lista połączeń</text>
+<text x="975" y="717" font-size="12" font-weight="700" fill="#5b636c" text-anchor="start" >Sygnał</text>
+<text x="1080" y="717" font-size="12" font-weight="700" fill="#5b636c" text-anchor="start" >Punkt lutowania na płytce</text>
+<text x="1325" y="717" font-size="12" font-weight="700" fill="#5b636c" text-anchor="start" >Raspberry Pi Pico</text>
+<line x1="936" y1="725" x2="1464" y2="725" stroke="#d5d1c8"/>
+<circle cx="947" cy="745.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="749.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">1</text>
+<rect x="975" y="739" width="4" height="14" rx="1" fill="#1f2328"/>
+<text x="985" y="750" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >GND (USB)</text>
+<text x="1080" y="750" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >kondensator obok tantala, górny pad</text>
+<text x="1325" y="750" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GND, pin 38</text>
+<rect x="930" y="758" width="540" height="25" fill="#f6f5f1"/>
+<circle cx="947" cy="770.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="774.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">2</text>
+<rect x="975" y="764" width="4" height="14" rx="1" fill="#d1242f"/>
+<text x="985" y="775" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >+5 V (USB)</text>
+<text x="1080" y="775" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >ten sam kondensator, dolny pad</text>
+<text x="1325" y="775" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >VBUS, pin 40</text>
+<circle cx="947" cy="795.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="799.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">3</text>
+<rect x="975" y="789" width="4" height="14" rx="1" fill="#0b8a8f"/>
+<text x="985" y="800" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >STRUM UP</text>
+<text x="1080" y="800" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >D63, pojedyncza nóżka</text>
+<text x="1325" y="800" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP7, pin 10</text>
+<rect x="930" y="808" width="540" height="25" fill="#f6f5f1"/>
+<circle cx="947" cy="820.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="824.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">4</text>
+<rect x="975" y="814" width="4" height="14" rx="1" fill="#0b8a8f"/>
+<text x="985" y="825" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >STRUM DOWN</text>
+<text x="1080" y="825" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >D65, pojedyncza nóżka</text>
+<text x="1325" y="825" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP8, pin 11</text>
+<circle cx="947" cy="845.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="849.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">5</text>
+<rect x="975" y="839" width="4" height="14" rx="1" fill="#8250df"/>
+<text x="985" y="850" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >USB D+</text>
+<text x="1080" y="850" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >3. rezystor nad U1, dolny pad</text>
+<text x="1325" y="850" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >TP3 (spód)</text>
+<rect x="930" y="858" width="540" height="25" fill="#f6f5f1"/>
+<circle cx="947" cy="870.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="874.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">6</text>
+<rect x="975" y="864" width="4" height="14" rx="1" fill="#8250df"/>
+<text x="985" y="875" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >USB D−</text>
+<text x="1080" y="875" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >1. rezystor nad U1, dolny pad</text>
+<text x="1325" y="875" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >TP2 (spód)</text>
+<circle cx="947" cy="895.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="899.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">7</text>
+<rect x="975" y="889" width="4" height="14" rx="1" fill="#0969da"/>
+<text x="985" y="900" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >ZOUT</text>
+<text x="1080" y="900" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >R8, górny pad (rev 3: dolny)</text>
+<text x="1325" y="900" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP26 / ADC0, pin 31</text>
+<rect x="930" y="908" width="540" height="25" fill="#f6f5f1"/>
+<circle cx="947" cy="920.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="924.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">8</text>
+<rect x="975" y="914" width="4" height="14" rx="1" fill="#0969da"/>
+<text x="985" y="925" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >YOUT</text>
+<text x="1080" y="925" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >R9, górny pad (rev 3: dolny)</text>
+<text x="1325" y="925" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP27 / ADC1, pin 32</text>
+<circle cx="947" cy="945.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="949.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">9</text>
+<rect x="975" y="939" width="4" height="14" rx="1" fill="#0969da"/>
+<text x="985" y="950" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >XOUT</text>
+<text x="1080" y="950" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >R10, górny pad (rev 3: dolny)</text>
+<text x="1325" y="950" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP28 / ADC2, pin 34</text>
+<rect x="930" y="958" width="540" height="25" fill="#f6f5f1"/>
+<circle cx="947" cy="970.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="974.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">10</text>
+<rect x="975" y="964" width="4" height="14" rx="1" fill="#ee8a00"/>
+<text x="985" y="975" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >ORANGE</text>
+<text x="1080" y="975" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C14, pad od strony R29</text>
+<text x="1325" y="975" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP6, pin 9</text>
+<circle cx="947" cy="995.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="999.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">11</text>
+<rect x="975" y="989" width="4" height="14" rx="1" fill="#1f6fe0"/>
+<text x="985" y="1000" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >BLUE</text>
+<text x="1080" y="1000" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C15, pad od strony R28</text>
+<text x="1325" y="1000" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP5, pin 7</text>
+<rect x="930" y="1008" width="540" height="25" fill="#f6f5f1"/>
+<circle cx="947" cy="1020.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="1024.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">12</text>
+<rect x="975" y="1014" width="4" height="14" rx="1" fill="#e8b800"/>
+<text x="985" y="1025" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >YELLOW</text>
+<text x="1080" y="1025" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C16, pad od strony R27</text>
+<text x="1325" y="1025" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP4, pin 6</text>
+<circle cx="947" cy="1045.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="1049.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">13</text>
+<rect x="975" y="1039" width="4" height="14" rx="1" fill="#e03131"/>
+<text x="985" y="1050" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >RED</text>
+<text x="1080" y="1050" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C17, pad od strony R26</text>
+<text x="1325" y="1050" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP3, pin 5</text>
+<rect x="930" y="1058" width="540" height="25" fill="#f6f5f1"/>
+<circle cx="947" cy="1070.5" r="10" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.111"/><text x="947" y="1074.46" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">14</text>
+<rect x="975" y="1064" width="4" height="14" rx="1" fill="#2f9e44"/>
+<text x="985" y="1075" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >GREEN</text>
+<text x="1080" y="1075" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >C18, pad od strony R25</text>
+<text x="1325" y="1075" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >GP2, pin 4</text>
+<rect x="920" y="1115" width="560" height="150" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="934" y="1139" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >Zanim zaczniesz</text>
+<text x="936" y="1166" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >1.  Wylutuj U1 (MC9S08JM60). Pico przejmuje jego linie USB i wejścia.</text>
+<text x="936" y="1190" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >2.  Nigdy nie podłączaj jednocześnie micro-USB Pico i kabla gitary.</text>
+<text x="936" y="1214" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >3.  Płytki rev 3: punkty 7, 8 i 9 idą do dolnych padów R8, R9 i R10.</text>
+<text x="936" y="1238" font-size="12.5" font-weight="400" fill="#1f2328" text-anchor="start" >4.  Porównaj z SKAN PCB/MCU.png, SKAN PCB/FRET.png i oryginalnymi skanami.</text>
+<rect x="325" y="980" width="580" height="285" rx="8" fill="#ffffff" stroke="#d5d1c8"/><text x="339" y="1004" font-size="15" font-weight="700" fill="#1f2328" text-anchor="start" >Raspberry Pi Pico (RP2040), od góry</text>
+<rect x="372" y="1050" width="459" height="189" rx="9" fill="#1e7a3e" stroke="#11512a" stroke-width="1.5"/><rect x="360.3" y="1111.2" width="51.3" height="66.6" rx="3" fill="#c9ccd1" stroke="#7d8187" stroke-width="1.2"/><text x="419.6" y="1148.5" font-size="11" font-weight="700" fill="#d9f0df" text-anchor="start" >USB</text><text x="696" y="1142.5" font-size="15" font-weight="700" fill="#e9f6ec" text-anchor="middle" >Raspberry Pi Pico</text><text x="696" y="1160.5" font-size="11.5" font-weight="400" fill="#bfe3c9" text-anchor="middle" >GND = dowolny kwadratowy pad</text><circle cx="384.33" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="384.33" cy="1224.51" r="4.05" fill="#3a3a3a"/><text x="384.33" y="1212.31" font-size="10" font-weight="700" fill="#bfe3c9" text-anchor="middle" >1</text><circle cx="407.19" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="407.19" cy="1224.51" r="4.05" fill="#3a3a3a"/><rect x="422.85" y="1217.31" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="430.05" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="452.91" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="452.91" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="452.91" cy="1224.51" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="452.91" y1="1231.71" x2="452.91" y2="1240.11" stroke="#1f2328" stroke-width="1"/><circle cx="452.91" cy="1250.51" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="452.91" y="1254.47" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">14</text><text x="456.91" y="1211.31" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="start" transform="rotate(-90 456.91 1211.31)">GP2</text><circle cx="475.77" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="475.77" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="475.77" cy="1224.51" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="475.77" y1="1231.71" x2="475.77" y2="1240.11" stroke="#1f2328" stroke-width="1"/><circle cx="475.77" cy="1250.51" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="475.77" y="1254.47" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">13</text><text x="479.77" y="1211.31" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="start" transform="rotate(-90 479.77 1211.31)">GP3</text><circle cx="498.63" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="498.63" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="498.63" cy="1224.51" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="498.63" y1="1231.71" x2="498.63" y2="1240.11" stroke="#1f2328" stroke-width="1"/><circle cx="498.63" cy="1250.51" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="498.63" y="1254.47" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">12</text><text x="502.63" y="1211.31" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="start" transform="rotate(-90 502.63 1211.31)">GP4</text><circle cx="521.49" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="521.49" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="521.49" cy="1224.51" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="521.49" y1="1231.71" x2="521.49" y2="1240.11" stroke="#1f2328" stroke-width="1"/><circle cx="521.49" cy="1250.51" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="521.49" y="1254.47" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">11</text><text x="525.49" y="1211.31" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="start" transform="rotate(-90 525.49 1211.31)">GP5</text><rect x="537.15" y="1217.31" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="544.35" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="567.21" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="567.21" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="567.21" cy="1224.51" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="567.21" y1="1231.71" x2="567.21" y2="1240.11" stroke="#1f2328" stroke-width="1"/><circle cx="567.21" cy="1250.51" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="567.21" y="1254.47" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">10</text><text x="571.21" y="1211.31" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="start" transform="rotate(-90 571.21 1211.31)">GP6</text><circle cx="590.07" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="590.07" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="590.07" cy="1224.51" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="590.07" y1="1231.71" x2="590.07" y2="1240.11" stroke="#1f2328" stroke-width="1"/><circle cx="590.07" cy="1250.51" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="590.07" y="1254.47" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">3</text><text x="594.07" y="1211.31" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="start" transform="rotate(-90 594.07 1211.31)">GP7</text><circle cx="612.93" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="612.93" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="612.93" cy="1224.51" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="612.93" y1="1231.71" x2="612.93" y2="1240.11" stroke="#1f2328" stroke-width="1"/><circle cx="612.93" cy="1250.51" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="612.93" y="1254.47" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">4</text><text x="616.93" y="1211.31" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="start" transform="rotate(-90 616.93 1211.31)">GP8</text><circle cx="635.79" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="635.79" cy="1224.51" r="4.05" fill="#3a3a3a"/><rect x="651.45" y="1217.31" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="658.65" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="681.51" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="681.51" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="704.37" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="704.37" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="727.23" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="727.23" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="750.09" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="750.09" cy="1224.51" r="4.05" fill="#3a3a3a"/><rect x="765.75" y="1217.31" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="772.95" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="795.81" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="795.81" cy="1224.51" r="4.05" fill="#3a3a3a"/><circle cx="818.67" cy="1224.51" r="7.2" fill="#d6b45c"/><circle cx="818.67" cy="1224.51" r="4.05" fill="#3a3a3a"/><text x="818.67" y="1212.31" font-size="10" font-weight="700" fill="#bfe3c9" text-anchor="middle" >20</text><circle cx="818.67" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="818.67" cy="1064.49" r="4.05" fill="#3a3a3a"/><text x="818.67" y="1083.69" font-size="10" font-weight="700" fill="#bfe3c9" text-anchor="middle" >21</text><circle cx="795.81" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="795.81" cy="1064.49" r="4.05" fill="#3a3a3a"/><rect x="765.75" y="1057.29" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="772.95" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="750.09" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="750.09" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="727.23" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="727.23" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="704.37" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="704.37" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="681.51" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="681.51" cy="1064.49" r="4.05" fill="#3a3a3a"/><rect x="651.45" y="1057.29" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="658.65" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="635.79" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="635.79" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="612.93" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="612.93" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="590.07" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="590.07" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="590.07" cy="1064.49" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="590.07" y1="1057.29" x2="590.07" y2="1048.89" stroke="#1f2328" stroke-width="1"/><circle cx="590.07" cy="1038.49" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="590.07" y="1042.45" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">7</text><text x="594.07" y="1077.69" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="end" transform="rotate(-90 594.07 1077.69)">GP26</text><circle cx="567.21" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="567.21" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="567.21" cy="1064.49" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="567.21" y1="1057.29" x2="567.21" y2="1048.89" stroke="#1f2328" stroke-width="1"/><circle cx="567.21" cy="1038.49" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="567.21" y="1042.45" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">8</text><text x="571.21" y="1077.69" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="end" transform="rotate(-90 571.21 1077.69)">GP27</text><rect x="537.15" y="1057.29" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="544.35" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="521.49" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="521.49" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="521.49" cy="1064.49" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="521.49" y1="1057.29" x2="521.49" y2="1048.89" stroke="#1f2328" stroke-width="1"/><circle cx="521.49" cy="1038.49" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="521.49" y="1042.45" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">9</text><text x="525.49" y="1077.69" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="end" transform="rotate(-90 525.49 1077.69)">GP28</text><circle cx="498.63" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="498.63" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="475.77" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="475.77" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="452.91" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="452.91" cy="1064.49" r="4.05" fill="#3a3a3a"/><rect x="422.85" y="1057.29" width="14.4" height="14.4" fill="#d6b45c"/><circle cx="430.05" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="430.05" cy="1064.49" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="430.05" y1="1057.29" x2="430.05" y2="1048.89" stroke="#1f2328" stroke-width="1"/><circle cx="430.05" cy="1038.49" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="430.05" y="1042.45" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">1</text><text x="434.05" y="1077.69" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="end" transform="rotate(-90 434.05 1077.69)">GND</text><circle cx="407.19" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="407.19" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="384.33" cy="1064.49" r="7.2" fill="#d6b45c"/><circle cx="384.33" cy="1064.49" r="4.05" fill="#3a3a3a"/><circle cx="384.33" cy="1064.49" r="9.7" fill="none" stroke="#ffd21f" stroke-width="3"/><line x1="384.33" y1="1057.29" x2="384.33" y2="1048.89" stroke="#1f2328" stroke-width="1"/><circle cx="384.33" cy="1038.49" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="384.33" y="1042.45" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">2</text><text x="388.33" y="1077.69" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="end" transform="rotate(-90 388.33 1077.69)">VBUS</text><circle cx="642" cy="1016" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="642" y="1019.96" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">5</text><text x="657" y="1020.5" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >USB D+  →  TP3</text><circle cx="782" cy="1016" r="9.5" fill="#ffffff" stroke="#0f2a8a" stroke-width="1.056"/><text x="782" y="1019.96" font-size="11" font-weight="700" fill="#1c3fd1" text-anchor="middle">6</text><text x="797" y="1020.5" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start" >USB D−  →  TP2</text><text x="642" y="1038" font-size="11" font-weight="400" fill="#5b636c" text-anchor="start" >pola testowe na spodzie, obok gniazda USB</text>
+</svg>
